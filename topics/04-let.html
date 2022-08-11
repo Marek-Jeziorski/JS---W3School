@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Let , Const , Hoisting, Block Scope, Operators</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!-- TOPIC NAME  -->
+        <h2>Let</h2>
+
+        <!--  -->
+        <h4>1 - Cannot be Redeclared</h4>
+        <div>
+          <p>Variables defined with LET cannot be Redeclared.</p>
+          <p>Variables defined with LET must be Declared before use.</p>
+          <p>Variables defined with LET have BLOCK SCOPE.</p>
+          <p class="code">
+            let x = "John Doe"; <br />
+            let x = 0; <br /><span class="att-com">// SyntaxError: 'x' has already been declared</span>
+          </p>
+
+          <p class="code">
+            var x = "John Doe"; <br />
+            var x = 0; <br />
+            <span class="att-com">// With Var is OK</span>
+          </p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>2 - Block scope</h4>
+        <div>
+          <p>Before ES6 (2015), JavaScript had only<span class="att"> GLOBAL SCOPE and FUNCTION SCOPE</span>.</p>
+          <p>ES6 introduced two important new JavaScript keywords: <span class="att">LET and CONST</span>..</p>
+          <p><span class="mark">! </span>These two keywords provide BLOCK SCOPE in JavaScript.</p>
+
+          <p class="code">
+            { <br />
+            let x = 2; <br />
+            } <br />
+            <span class="att-com">// x can NOT be used here</span>
+          </p>
+
+          <p><span class="mark">!</span> Variables declared with the var keyword can NOT have block scope.</p>
+
+          <p class="code">
+            { <br />
+            var x = 2; <br />
+            } <br />
+            <span class="att-com">// x CAN be used here</span>
+          </p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>3 - Redeclaring Variables</h4>
+        <div>
+          <p>Redeclaring a variable using the VAR keyword can impose problems.</p>
+          <p>Redeclaring a variable inside a BLOCK will also redeclare the VARIABLE outside the BLOCK:</p>
+          <p class="code">
+            var x = 10; <br />
+            <span class="att-com">// Here x is 10</span> <br />
+            {<br />
+            var x = 2;<br />
+            <span class="att-com">// Here x is 2 </span><br />
+            }
+            <br />
+            <span class="att-com">// Here x is 2</span>
+          </p>
+
+          <p>Redeclaring a variable using the <span class="att">LET</span> keyword can solve this problem.</p>
+
+          <p>Redeclaring a VARIABLE inside a BLOCK by LET will not redeclare the variable outside the block:</p>
+
+          <div class="code">
+            <p>let x = 10;</p>
+            <p class="att-com">// Here x is 10</p>
+            <p>
+              { <br />
+              let x = 2; <span class="att-com"> // Here x is 2</span> <br />
+              }
+            </p>
+            <p class="att-com">// Here x is 10</p>
+          </div>
+
+          <p>Redeclaring a JavaScript variable with VAR is allowed anywhere in a program:</p>
+          <p>With LET, redeclaring a variable in the same block is NOT allowed:</p>
+
+          <div class="code">
+            var x = 2; <span class="att-com"> // Allowed</span> <br />
+            <u>let x = 3; <span class="att-com">// Not allowed --> because is the same block</span> <br /></u>
+            { <br />
+            let x = 2;<span class="att-com"> // Allowed</span> <br />
+            let x = 3 <span class="att-com"> // Not allowed </span><br />
+            } <br />
+            { <br />
+            let x = 2; <span class="att-com">// Allowed</span> <br />
+            var x = 3 <span class="att-com">// Not allowed (can't redeclare LET)</span><br />}
+          </div>
+
+          <p>Redeclaring a variable with let, in another block, IS allowed:</p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>4 - Let Hoisting</h4>
+        <div>
+          <p>Variables defined with <span class="att">var</span> are hoisted to the top and can be initialized at any time.</p>
+          <p><span class="mark">!</span> Meaning: You can use the variable before it is declared:</p>
+          <p>Variables defined with <span class="att">let</span> are also hoisted to the top of the block, but not initialized.</p>
+          <p><span class="mark">!</span> Meaning: Using a <span class="att">let</span> variable before it is declared will result in a <span class="att">ReferenceError:</span></p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>5 - Const</h4>
+        <div>
+          <p><span class="mark">!</span> JavaScript const variables must be assigned a value when they are declared:</p>
+          <p>Variables defined with const cannot be Redeclared.</p>
+          <p>Variables defined with const cannot be Reassigned.</p>
+          <p>Variables defined with const have Block Scope <span class="mark">!</span></p>
+          <p>As a general rule, always declare a variable with const unless you know that the value will change.</p>
+          <ul class="att-list">
+            Use const when you declare:
+
+            <li>A new Array</li>
+            <li>A new Object</li>
+            <li>A new Function</li>
+            <li>A new RegExp</li>
+          </ul>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>6 - Constant Objects and Arrays</h4>
+        <div>
+          <p>The keyword const is a little misleading.</p>
+
+          <p>It does not define a constant value. It defines a constant reference to a value.</p>
+          <ul class="att-list">
+            <span class="mark">!</span>
+            Because of this you can NOT:
+
+            <li>Reassign a constant value</li>
+            <li>Reassign a constant array</li>
+            <li>Reassign a constant object</li>
+          </ul>
+          <ul class="att-list">
+            <p><span class="mark">!</span> But you CAN:</p>
+            <li>Change the elements of constant array</li>
+            <li>Change the properties of constant object</li>
+          </ul>
+
+          <p>EXAMPLE 1</p>
+          <p class="code"><span id="myCars"></span></p>
+          <p>EXAMPLE 2</p>
+          <p class="code"><span id="myFriends"></span></p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>7 - Assignment Operators</h4>
+        <div>
+          <p>Assignment operators assign values to variables.</p>
+          <p>The addition assignment operator (+=) adds a value to a variable.</p>
+          <p>The + operator can also be used to add (concatenate) strings.</p>
+          <p>The += assignment operator can also be used to add (concatenate) strings:</p>
+          <p><span class="mark">!</span> When used on strings, the + operator is called the concatenation operator.</p>
+          <p><span class="mark">!</span> If you add a number and a string, the result will be a string!</p>
+
+          <!-- EXAMPLE 1-->
+          <p>EXAMPLE 1 --> see Console (different colors for numbers and strings)</p>
+          <p class="code"><span id="string-a"></span></p>
+          <!-- EXAMPLE 2-->
+          <p>EXAMPLE 2</p>
+          <p class="code"><span id="string-b"></span></p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>8 - Arithmetic Operators</h4>
+        <div>
+          <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+          <p>A typical arithmetic operation operates on two numbers.</p>
+          <p>The two numbers can be literals:</p>
+          <p class="code">let x = 100 + 50</p>
+          <p>or variables:</p>
+          <p class="code">let x = a + b;</p>
+          <p>or expressions:</p>
+          <p class="code">let x = (100 + 50) * a;</p>
+          <p>The numbers (in an arithmetic operation) are called operands.</p>
+          <p>The operation (to be performed between the two operands) is defined by an operator.</p>
+          <p class="code">(operand) 100 +(operator) 50 (operand)</p>
+          <p>The modulus operator (%) returns the division remainder.</p>
+          <p>In arithmetic, the division of two integers produces a quotient and a remainder.</p>
+          <p>In mathematics, the result of a modulo operation is the remainder of an arithmetic division</p>
+        </div>
+        <!--  -->
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/04-let.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

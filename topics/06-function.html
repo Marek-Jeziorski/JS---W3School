@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Function</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!-- TOPIC NAME  -->
+        <h2>Function</h2>
+
+        <!--  -->
+        <h4>1 - Function Invocation</h4>
+        <div>
+          <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+          <ul>
+            <li>When an event occurs (when a user clicks a button)</li>
+            <li>When it is invoked (called) from JavaScript code</li>
+            <li>Automatically (self invoked)</li>
+          </ul>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>2 - Function Return</h4>
+        <div>
+          <p>When JavaScript reaches a <span class="att">return statement</span>, the function will stop executing.</p>
+          <p>If the function was invoked from a statement, <span class="att"> JS will "return" to execute the code after the invoking statement</span>.</p>
+          <p>Functions often <span class="att">compute a return value</span>. The return <span class="att">value is "returned" back to the "caller"</span>:</p>
+          <div class="code">
+            <p>DEMO-1 :</p>
+            <p>This example calls a function which performs a calculation and returns the result:</p>
+            <p id="demo"></p>
+          </div>
+        </div>
+
+        <!--  -->
+        <h4>3 - Why Functions?</h4>
+        <div>
+          <p>You can reuse code: Define the code once, and use it many times.</p>
+          <p>You can use the same code many times with different arguments, to produce different results.</p>
+          <div class="code">
+            <p>DEMO-2 :</p>
+            <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+            <p id="demo-2"></p>
+          </div>
+          <p>Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.</p>
+          <p>Accessing a function without () will return the function object instead of the function result.</p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>4 - Functions Used as Variable Values</h4>
+        <div>
+          <p>Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.</p>
+
+          <div class="code">
+            <p>DEMO-3 :</p>
+            <p>Instead of using a variable (demo-2) to store the return value of a function:</p>
+
+            <p>You can use the function directly, as a variable value:</p>
+            <p id="demo-3"></p>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>5 - Local Variables</h4>
+        <div>
+          <p>Variables declared within a JavaScript function, become LOCAL to the function.</p>
+          <p><span class="mark">!</span> Local variables are created when a function starts, and deleted when the function is completed.</p>
+          <p>Local variables can only be accessed from within the function.</p>
+          <p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
+        </div>
+        <!--  -->
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/06-function.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

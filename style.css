@@ -1,0 +1,102 @@
+body {
+  background-color: #111;
+  color: rgb(44, 209, 44);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: lime;
+  text-decoration: none;
+}
+
+em {
+  color: yellow;
+}
+
+samp {
+  display: block;
+  margin-top: 16px;
+  border: 1px white dotted;
+}
+
+samp > p {
+  font-size: 0.9rem;
+  margin: 0.5em;
+  color: rgb(199, 193, 193);
+}
+
+code {
+  color: rgb(199, 193, 193);
+}
+
+strong {
+  font-weight: 700;
+}
+
+h4,
+h2 {
+  color: lightblue;
+}
+
+h5 {
+  margin: 0;
+  opacity: 0.6;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+.container {
+  background-color: #222;
+  margin: 0 auto;
+  min-height: 95vh;
+}
+
+.flexer {
+  display: flex;
+}
+
+#menu {
+  flex: 8;
+  border: 1px solid limegreen;
+}
+
+#content {
+  padding: 0 16px;
+  flex: 12;
+  border: 1px solid limegreen;
+  padding-right: 140px;
+}
+
+.list-item {
+  margin: 1.5em 0;
+}
+
+.mark {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: yellow;
+}
+
+.att,
+.att-list > li {
+  font-weight: 500;
+  color: yellow;
+}
+
+.att-com {
+  color: red;
+}
+
+.code {
+  color: lightgray;
+}
+
+.des {
+  color: gray;
+}
+
+.demo {
+  color: gray;
+}

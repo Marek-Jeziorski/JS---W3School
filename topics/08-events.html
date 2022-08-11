@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Events</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--         
+        <h2>TOPIC NAME !!!</h2>
+
+        <h4>1 - SUBTOPIC NAME !!!</h4>
+        <div>
+          <p><span class="mark">!</span> Important informations</p>
+          <div class="code">
+            <p>Description of code below:</p>
+            <p>DEMO-1:</p>
+            <p id="demo">Result of executing code</p>
+          </div>
+        </div> -->
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <h2>EVENTS</h2>
+        <!--  -->
+        <hr />
+        <h4>1 - HTML Events</h4>
+        <div>
+          <p>HTML events are "things" that happen to HTML elements.</p>
+          <p>When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+          <p>Here are some examples of HTML events:</p>
+          <ul>
+            <li>An HTML web page has finished loading</li>
+            <li>An HTML input field was changed</li>
+            <li>An HTML button was clicked</li>
+          </ul>
+          <p>Often, when events happen, you may want to do something.</p>
+          <p>JavaScript lets you execute code when events are detected.</p>
+          <p>HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.</p>
+
+          <samp>
+            <p>DEMO-1:</p>
+            <p class="des">Code changes the content of the element with id="demo".</p>
+            <p id="demo"></p>
+            <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+            <button onclick="document.getElementById('demo').innerHTML= ''">Reset</button>
+          </samp>
+          <samp>
+            <p class="des">The code changes the content of its own element (using this.innerHTML):</p>
+            <p id="demo"></p>
+            <button id="but-1" onclick="this.innerHTML=Date()">The time is?</button>
+            <button onclick="document.getElementById('but-1').innerHTML='The time is?'">Reset</button>
+          </samp>
+          <p><span class="mark">! </span> JavaScript code is often several lines long. It is more common to see event attributes calling functions:</p>
+          <samp>
+            <p>DEMO-2</p>
+            <p class="des">Event handler calls functions</p>
+            <p id="demo-2"></p>
+            <button onclick="displayDate()">The time is?</button>
+            <button onclick="resetDate()">Reset</button>
+          </samp>
+
+          <hr />
+          <!--  -->
+        </div>
+
+        <h4>2 - JavaScript Event Handlers</h4>
+        <div>
+          <p>Event handlers can be used to handle and verify user input, user actions, and browser actions:</p>
+          <ul>
+            <li>Things that should be done every time a page loads</li>
+            <li>Things that should be done when the page is closed</li>
+            <li>Action that should be performed when a user clicks a button</li>
+            <li>Content that should be verified when a user inputs data</li>
+            <li>And more ...</li>
+          </ul>
+          <p>Many different methods can be used to let JavaScript work with events:</p>
+          <ul>
+            <li>HTML event attributes can execute JavaScript code directly</li>
+            <li>HTML event attributes can call JavaScript functions</li>
+            <li>You can assign your own event handler functions to HTML elements</li>
+            <li>You can prevent events from being sent or being handled</li>
+            <li>And more ...</li>
+          </ul>
+        </div>
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/08-events.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

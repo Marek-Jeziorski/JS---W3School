@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Strings</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+
+        <!--  -->
+        <h2>Strings</h2>
+        <hr />
+        <h4>1 - String Length (property)</h4>
+        <div>
+          <p>JavaScript strings are for storing and manipulating text.</p>
+          <p>To find the length of a string, use the <span class="att">built-in length property:</span></p>
+          <samp>
+            <p class="des">Length property:</p>
+            <p>DEMO-1:</p>
+            <p id="demo">Result of executing code</p>
+          </samp>
+          <p>Normally, JavaScript strings are primitive values, created from literals:</p>
+          <p><span class="mark">!</span> Comparing two JavaScript objects always returns false.</p>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>2 - String Methods and Properties</h4>
+        <div>
+          <p><span class="mark">!</span> All string methods <span class="att">return a new string</span>. They don't modify the original string</p>
+          <p><span class="mark">!</span> <span class="att">Strings are immutable</span>: Strings cannot be changed, only replaced</p>
+          <p><span class="mark">!</span> <span class="att">Primitive values</span>, like "John Doe", cannot have properties or methods <span class="att">(because they are not objects)</span>.</p>
+          <p><span class="mark">!</span> But, methods and properties are also available<span class="att"> to </span>primitive values, because JavaScript treats primitive values <span class="att">as objects</span> when executing methods and properties.</p>
+          <p><span class="att">So they can be Objects but not Subjects</span></p>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>3 - Extracting String Parts</h4>
+        <div>
+          <p>There are 3 methods for extracting a part of a string:</p>
+          <ul>
+            <li class="att">slice (start, end)</li>
+            <li>substring (start, end)</li>
+            <li>substr (start, length)</li>
+          </ul>
+
+          <p>slice() extracts a part of a string and returns the extracted part in a new string.</p>
+          <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
+          <p>If a parameter is negative, the position is counted from the end of the string.</p>
+
+          <samp>
+            <p class="des">Slice out a portion of a string from position 7 to position 13 (13 not included):</p>
+            <p>DEMO-2:</p>
+            <p id="demo-2"></p>
+            <p id="demo-2a"></p>
+          </samp>
+
+          <p>If you omit the second parameter, the method will slice out the rest of the string:</p>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>4 - Replacing String Content</h4>
+        <div>
+          <p>The <span class="att">replace()</span> method replaces a specified value with another value in a string:</p>
+
+          <samp>
+            <p class="des">Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+            <p>DEMO-3</p>
+            <p><button onclick="myFunction()">Try it</button> <button onclick="myReFunction()">Reset</button></p>
+            <p id="demo-3">Please visit Microsoft!</p>
+          </samp>
+
+          <p>The replace() method does not change the string it is called on.</p>
+          <p>The replace() method returns a new string.</p>
+          <p><sapn class="mark">!</sapn> By default, the replace() method replaces only the first match:</p>
+          <p>If you want to replace all matches, use a <span class="att">regular expression with the /g</span> flag set.</p>
+          <samp>
+            <p class="des">See examples below.</p>
+            <p>DEMO-4</p>
+            <p id="demo-4">Please visit Microsoft and Microsoft!</p>
+            <button onclick="myFunction2()">Try it</button>
+            <button onclick="myReFunction2()">Reset</button>
+          </samp>
+          <p>By default, the replace() method is case sensitive.</p>
+          <p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
+          <p class="att">Regular expressions are written without quotes.</p>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>5 - Converting to Upper and Lower Case</h4>
+        <div>
+          <p>A string is converted to upper case with <span class="att">toUpperCase()</span>:</p>
+          <p>A string is converted to lower case with<span class="att"> toLowerCase()</span>:</p>
+
+          <samp>
+            <p class="des">String toUpperCase()</p>
+            <p>DEMO-5</p>
+            <button onclick="myFunA()">Upper</button>
+            <button onclick="myFunAre()">Lower</button>
+
+            <p id="demo-5">Hello World!</p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>6 - String concat()</h4>
+        <p>The concat() method can be used instead of the plus operator.</p>
+        <div>
+          <samp>
+            <p class="des">The concat() method joins two or more strings:</p>
+            <p>DEMO-6</p>
+            <p id="demo-6"></p>
+          </samp>
+        </div>
+
+        <hr />
+        <!--  -->
+        <h4>7 - String trim()</h4>
+        <div>
+          <p>The trim() method removes whitespace from both sides of a string:</p>
+          <samp>
+            <p class="des">The trim() Method</p>
+            <p>DEMO-7</p>
+            <p id="demo-7"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>8 - String padding</h4>
+        <div>
+          <p><span class="att">padStart()</span> and <span class="att">padEnd()</span> to support padding at the beginning and at the end of a string.</p>
+          <samp>
+            <p class="des">The padStart() method pads a string with another string</p>
+            <p>DEMO-8</p>
+            <p id="demo-8"></p>
+          </samp>
+          <p>The padStart() method is a string method.</p>
+          <p>To pad a number, convert the number to a string first.</p>
+          <samp>
+            <p class="des">To pad a number, convert the number to a string first.</p>
+            <p>DEMO-8b</p>
+            <p id="demo-8b"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>9 - Extracting String Characters</h4>
+        <div>
+          <p>There are 3 methods for extracting string characters:</p>
+          <ul>
+            <li>charAt (position) (M)</li>
+            <li>charCodeAt (position) (M)</li>
+            <li><span class="att">property</span> access[] (P)</li>
+          </ul>
+          <samp>
+            <p class="des">The charAt() method returns the character at a specified index (position) in a string:</p>
+            <p>DEMO-9</p>
+            <p id="demo-9"></p>
+            <br />
+            <p class="des">The charCodeAt() method returns the unicode of the character at a specified index in a string:</p>
+            <p>DEMO-9b</p>
+            <p id="demo-9b"></p>
+            <br />
+            <p class="des">ECMAScript 5 (2009) allows property access [ ] on strings:</p>
+            <p>DEMO-9c</p>
+            <p id="demo-9c"></p>
+          </samp>
+          <ul>
+            <p>Property access might be a little unpredictable:</p>
+            <li>It makes strings look like arrays (but they are not)</li>
+            <li>If no character is found, [ ] returns undefined, while charAt() returns an empty string.</li>
+            <li>It is read only. str[0] = "A" gives no error (but does not work!)</li>
+          </ul>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>10 - Converting a String to an Array</h4>
+        <div>
+          <p>If you want to work with a string as an array, you can convert it to an array.</p>
+          <p>A string can be converted to an array with the split() method:</p>
+          <p class="att">String split()</p>
+          <samp>
+            <p>DEMO-10</p>
+            <p class="des">Display all elements of array created from string:</p>
+
+            <p id="demo-10"></p>
+            <br />
+            <p>DEMO-10b</p>
+            <p class="des">Display the first array element, after a string split:</p>
+            <p id="demo-10b"></p>
+            <br />
+            <p>DEMO-10c</p>
+            <p class="des">Display the second array element, after a string split:</p>
+            <p id="demo-10c"></p>
+          </samp>
+
+          <p>If the separator is omitted, the returned array will contain the whole string in index [0].</p>
+
+          <p>If the separator is "", the returned array will be an array of single characters:</p>
+
+          <samp>
+            <p>DEMO-10d</p>
+            <p class="des">clear separator RegExp/stop/ --> '' to see vertical txt flow</p>
+            <p id="demo-10d"></p>
+          </samp>
+        </div>
+        <hr />
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/09-strings.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

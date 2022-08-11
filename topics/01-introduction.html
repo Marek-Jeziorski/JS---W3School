@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+    <script>
+      function topFunction() {
+        document.getElementById('place-function').innerHTML = 'First button will call function() placed at the end of - BODY';
+      }
+    </script>
+  </head>
+  <body>
+    <h5>W3 Schools - Introduction</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <h2>Introduction</h2>
+        <!--  -->
+
+        <h4>1 - JavaScript Can Change HTML Content</h4>
+
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript"'>Click Me</button>
+
+        <!--  -->
+
+        <h4>2 - JavaScript Can Change HTML Attribute Values</h4>
+
+        <button onclick="document.getElementById('myImage').src='/images/pic_bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="/images/pic_bulboff.gif" />
+
+        <button onclick="document.getElementById('myImage').src='/images/pic_bulboff.gif'">Turn off the light</button>
+
+        <!--  -->
+
+        <h4>3 - JavaScript can change the style of an HTML element.</h4>
+
+        <p id="fontsize-demo">JavaScript can change the style of an HTML element.</p>
+
+        <button onclick="document.getElementById('fontsize-demo').style.fontSize = '35px'">Click Me</button>
+        <button onclick="document.getElementById('fontsize-demo').style.fontSize = '16px'">Reset</button>
+
+        <h4>4 - JavaScript Can Hide / Show HTML Elements</h4>
+        <p>Remember Bulb from previous exercise???</p>
+        <button onclick="document.getElementById('myImage').style.display = 'none'">Hide Bulb</button>
+        <button onclick="document.getElementById('myImage').style.display = 'inline'">Show Bulb</button>
+
+        <!--  -->
+
+        <h4>5 - JavaScript Where To Place scripts ???</h4>
+        <p id="place-function">First button will call bottomFunction() placed at the end of - BODY</p>
+        <button type="button" onclick="bottomFunction()">Bottom bottomFunction()</button>
+        <button type="button" onclick="topFunction()">Top topFunction()</button>
+
+        <!--  -->
+        <!--  -->
+
+        <h4>6 - External JavaScript</h4>
+        <p>External scripts are practical when the same code is used in many different web pages.</p>
+        <p>You can place an external script reference in HEAD or BODY as you like.</p>
+        <p>The script will behave as if it was located exactly where the SCRIPT tag is located.</p>
+        <!--  -->
+        <!--  -->
+
+        <!-- myFunction  -->
+        <script>
+          function bottomFunction() {
+            document.getElementById('place-function').innerHTML = 'Second button will call topFunction() placed in - HEAD';
+          }
+        </script>
+
+        <!--  -->
+
+        <script src="/topics/01-introduction.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

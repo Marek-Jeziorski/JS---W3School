@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Strings Search</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+
+        <!--  -->
+        <h2>Strings Search</h2>
+        <hr />
+        <h4>1 - Search Metods</h4>
+        <div>
+          <ul>
+            <li>String indexOf()</li>
+            <li>String lastIndexOf()</li>
+            <li>String startsWith()</li>
+            <li>String endsWith()</li>
+          </ul>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>2 - String indexOf() , lastIndexOf()</h4>
+        <div>
+          <p>The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:</p>
+          <samp>
+            <p>DEMO-2:</p>
+            <p id="demo-2"></p>
+          </samp>
+          <p>The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:</p>
+          <samp>
+            <p>DEMO-2b:</p>
+            <p id="demo-2b"></p>
+          </samp>
+          <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+          <p>Both methods accept a second parameter as the starting position for the search:</p>
+          <samp><p>str.indexOf("locate", 15);</p> </samp>
+          <p>The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.</p>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>3 - String search()</h4>
+        <div>
+          <p>The search() method searches a string for a specified value and returns the position of the match:</p>
+          <samp>
+            <p>DEMO-3</p>
+            <p id="demo-3"></p>
+          </samp>
+          <p>The two methods, indexOf() and search(), are equal <span class="mark">?</span></p>
+          <p>The two methods <span class="att">are NOT equal</span>. These are the differences:</p>
+          <ul>
+            <li>The search() method cannot take a second start position argument.</li>
+            <li>The indexOf() method cannot take powerful search values (regular expressions).</li>
+          </ul>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>4 - String match()</h4>
+        <div>
+          <p>The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.</p>
+          <samp>
+            <p class="des">Search a string for "ain":</p>
+            <p>DEMO-4</p>
+            <p id="demo-4"></p>
+          </samp>
+          <br />
+          <samp>
+            <p class="des">Perform a global, case-insensitive search for "ain":</p>
+            <p>DEMO-4b</p>
+            <p id="demo-4b"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>5 - String includes()</h4>
+        <div>
+          <p>The includes() method returns true if a string contains a specified value.</p>
+          <samp>
+            <p class="des">Check if a string includes "world":</p>
+            <p>DEMO-5</p>
+            <p id="demo-5"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>6 - String startsWith() , endsWith()</h4>
+        <div>
+          <p>The startsWith() method returns true if a string begins with a specified value, otherwise false</p>
+          <samp>
+            <p class="des">Check if a string (at position 6) starts with "world":</p>
+            <p>DEMO-6</p>
+            <p id="demo-6"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/10-string-search.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

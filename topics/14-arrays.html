@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Arrays</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+
+        <!--  -->
+        <h2>Arrays</h2>
+        <hr />
+
+        <!--  -->
+        <h4>1 - Why Use Arrays?</h4>
+        <div>
+          <p>An array is a special variable, which can hold more than one value:</p>
+          <code>const cars = ["Saab", "Volvo", "BMW"];</code>
+
+          <p>What if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+          <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Creating an Array</h4>
+        <div>
+          <code>const cars = new Array("Saab", "Volvo", "BMW");</code>
+          <p><span class="mark">!</span> compare to objects and functions:</p>
+          <code>let y = new Number(123);</code> <br />
+          <code>let y = new String("John");</code> <br />
+          <code>const person = new Object();</code> <br />
+          <code>const x = function () {};</code><br />
+          <code>const x = function (a, b) {return a * b};</code>
+          <p>Using an array literal is the easiest way to create a JavaScript Array.</p>
+          <code>const array_name = [item1, item2, ...]; </code>
+          <samp>
+            <p class="des">Example of creating array</p>
+            <p>DEMO-2 :</p>
+            <p id="demo-2"></p>
+            <p class="des">You can also create an array, and then provide the elements:</p>
+            <p>DEMO-2b :</p>
+            <p id="demo-2b"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Arrays are Objects</h4>
+        <div>
+          <p>Arrays are a special type of objects. The <class class="att">typeof operator</class> in JavaScript returns "object" for arrays.</p>
+          <p>But, JavaScript arrays are best described as arrays.</p>
+          <p><span class="att">Arrays use numbers</span> to access its "elements".</p>
+          <p><sapn class="att">Objects use names</sapn> to access its "members".</p>
+          <samp>
+            <p class="des">Array - use numbers <span class="att">person[0]</span></p>
+            <p>DEMO-3</p>
+            <p id="demo-3"></p>
+            <p class="des">Objects - use name <span class="att">person.firstName</span></p>
+            <p>DEMO-3b</p>
+            <p id="demo-3b"></p>
+            <p>DEMO-3c</p>
+            <p class="des">Objects - use 'complex name': <span class="att">person['eyes colour']</span></p>
+
+            <p id="demo-3c"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Array Elements Can Be Objects</h4>
+        <div>
+          <p>JavaScript variables can be objects. Arrays are special kinds of objects.</p>
+          <p>Because of this, you can have variables of different types in the same Array.</p>
+          <p>You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:</p>
+          <ul>
+            <li>myArray[0] = Date.now;</li>
+            <li>myArray[1] = myFunction;</li>
+            <li>myArray[2] = myCars;</li>
+          </ul>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - Array Properties and Methods</h4>
+        <div>
+          <p>The real strength of JavaScript arrays are the built-in array properties and methods:</p>
+          <!--  -->
+          <p class="att">1 - The length Property</p>
+          <p>The length property of an array returns the length of an array <span class="att">(the number of array elements)</span>.</p>
+          <p>The length property is always one more than the highest array index.</p>
+          <samp>
+            <p class="des">Length of Array</p>
+            <p>DEMO-5/1</p>
+            <p id="demo-5/1"></p>
+          </samp>
+          <!--  -->
+          <p class="att">2 - Accessing the First/Last Array Element</p>
+          <p>The length property of an array returns the length of an array <span class="att">(the number of array elements)</span>.</p>
+          <samp>
+            <p class="des">Accessing the First Array Element</p>
+            <p>DEMO-5/2</p>
+            <p id="demo-5/2"></p>
+          </samp>
+          <!--  -->
+          <samp>
+            <p class="des">Accessing the Last Array Element</p>
+            <p>DEMO-5/2b</p>
+            <p id="demo-5/2b"></p>
+          </samp>
+          <!--  -->
+          <p class="att">3 - Looping Array Element - for ( ) , Array.forEach ( )</p>
+          <p>The best way to loop through an array is using a standard for loop:</p>
+          <samp>
+            <p class="des">for () {}</p>
+            <p>DEMO-5/3</p>
+            <p id="demo-5/3"></p>
+          </samp>
+          <p><span class="mark">!</span> CONSOLE</p>
+          <!--  -->
+          <p>Array.forEach() calls a function for each array element. <span class="att">(array.method)</span></p>
+          <samp>
+            <p class="des">Array.forEach(myFunction)</p>
+            <p>DEMO-5/3b</p>
+            <p id="demo-5/3b"></p>
+          </samp>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/14-arrays.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

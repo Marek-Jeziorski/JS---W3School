@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Object</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!-- TOPIC NAME  -->
+        <h2>Object</h2>
+
+        <!--  -->
+        <h4>1 - Real Life Objects, Properties, and Methods</h4>
+        <div>
+          <p>In real life, a car is an object</p>
+          <p>A car has properties like weight and color, and methods like start and stop:</p>
+          <p>All cars have the same properties, but the property values differ from car to car.</p>
+          <p>All cars have the same methods, but the methods are performed at different times.</p>
+          <p>It is a common practice to declare objects with the const keyword.</p>
+          <p><span class="mark">!</span> JavaScript objects are containers for named values called properties.</p>
+          <div class="code">
+            <p>You define (and create) a JavaScript object with an object literal:</p>
+            <p>DEMO-1:</p>
+            <p id="demo"></p>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>2 - Object Methods - THIS -</h4>
+        <div>
+          <p>Methods are actions that can be performed on objects.</p>
+          <p>A method is a function stored as a property..</p>
+          <div class="code">
+            <p>You define (and create) a JavaScript object with an object literal:</p>
+            <p>DEMO-2:</p>
+            <p id="demo-2"></p>
+            <p>DEMO-3:</p>
+            <p id="demo-3"></p>
+          </div>
+
+          <p>In JavaScript, the this keyword refers to an object.</p>
+
+          <p>Which object depends on how this is being invoked (used or pcalled).</p>
+
+          <p>The this keyword refers to different objects depending on how it is used:</p>
+
+          <ul>
+            <li>In an object method, this refers to the object.</li>
+            <li>Alone, this refers to the global object.</li>
+            <li>In a function, this refers to the global object.</li>
+            <li>In a function, in strict mode, this is undefined.</li>
+            <li>In an event, this refers to the element that received the event.</li>
+            <li>Methods like call(), apply(), and bind() can refer this to any object.</li>
+          </ul>
+          <p><span class="mark">!</span> This is not a variable. It is a keyword. You cannot change the value of this</p>
+          <p>In a function definition, this refers to the "owner" of the function.</p>
+          <p>In the example above, this is the person object that "owns" the fullName function.</p>
+          <p>In other words, this.firstName means the firstName property of this object.</p>
+          <p><span class="mark">!</span> Do Not Declare Strings, Numbers, and Booleans as Objects!</p>
+          <p class="code">
+            x = new String(); <br />
+            // Declares x as a String object
+          </p>
+          <p>Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.</p>
+        </div>
+        <!--  -->
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/07-object.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

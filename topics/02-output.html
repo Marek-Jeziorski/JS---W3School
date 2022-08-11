@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Output</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!-- TOPIC NAME  -->
+        <h2>JavaScript Output</h2>
+
+        <!--  -->
+        <h4>1 - JavaScript Display Possibilities</h4>
+        <div>
+          <ul>
+            <li>Writing into an HTML element, using <span class="att">innerHTML.</span></li>
+            <li>Writing into the HTML output using <span class="att">document.write()</span>.</li>
+            <li>Writing into an alert box, using <span class="att">window.alert()</span>.</li>
+            <li>Writing into the browser console, using <span class="att">console.log()</span>.</li>
+          </ul>
+          <!--  -->
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>2 - Using Display Methods (respectively) <span class="att">SEE</span> also .js file</h4>
+        <div>
+          <!--  -->
+          <span class="att">a) innerHtml</span>
+          <p id="display-one">This text will be changed by innerHTML property</p>
+          <!--  -->
+          <span class="att">b) document.write()</span>
+
+          <p><span class="mark">!</span> Result of document.write() is always display at the end of DOM OBJECT where SCRIPT is running. <span class="att">SEE</span> bottom of this document</p>
+
+          <p><span class="mark">! </span>ALSO: Using document.write() after an HTML document is loaded <span class="att">(html document = HTML+CSS+JS = HCJ)</span>, will delete all existing HTML:</p>
+
+          <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+          <p>Now <span class="att">SEE console.log</span> read an error.</p>
+          <p>The document.write() method should only be used for testing.</p>
+          <!--  -->
+          <p><span class="att">b) window.alert()</span></p>
+          <button type="button" onclick="window.alert(5+6)">Try it</button>
+
+          <p><span class="mark">!</span> In JS, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:</p>
+        </div>
+        <!--  -->
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/02-output.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
