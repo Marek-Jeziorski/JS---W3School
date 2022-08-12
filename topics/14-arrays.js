@@ -63,6 +63,8 @@
 }
 // CONSOLE EXAMPLE !!!
 {
+  console.log('DEMO-5/3----------------------------------------------------')
+
   const names = ['Marek', 'Aneta', 'Jadwiga', 'Tadeusz'];
   let lgth = names.length;
 
@@ -88,6 +90,7 @@
 }
 // CONSOLE EXAMPLE !!!
 {
+  console.log('DEMO-5/3B----------------------------------------------------')
   const names = ['ZIUTA', 'Viola', 'Alfred'];
 
   names.forEach(myFunction);
