@@ -1,7 +1,10 @@
 body {
   background-color: #111;
-  color: rgb(44, 209, 44);
+  color: rgb(147, 197, 147);
   font-family: "Segoe UI", sans-serif;
+}
+p {
+  line-height: 1.6;
 }
 
 a {
