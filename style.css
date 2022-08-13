@@ -1,7 +1,7 @@
 body {
   background-color: #111;
   color: rgb(44, 209, 44);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 a {
@@ -22,10 +22,6 @@ samp {
 samp > p {
   font-size: 0.9rem;
   margin: 0.5em;
-  color: rgb(199, 193, 193);
-}
-
-code {
   color: rgb(199, 193, 193);
 }
 
@@ -81,7 +77,7 @@ li {
 
 .att,
 .att-list > li {
-  font-weight: 500;
+  font-weight: 600;
   color: yellow;
 }
 
@@ -89,8 +85,10 @@ li {
   color: red;
 }
 
+code,
 .code {
   color: lightgray;
+  font-family: monospace;
 }
 
 .des {
@@ -99,4 +97,11 @@ li {
 
 .demo {
   color: gray;
+}
+
+.dnum {
+  color: rgb(21, 255, 0);
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+  font-weight: bold;
 }

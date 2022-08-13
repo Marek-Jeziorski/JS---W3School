@@ -130,3 +130,14 @@
     document.getElementById("demo-5_4c").innerHTML = fruits;
   }
 }
+//DEMO_7a------------  method Array.isArray()------------------------------
+{
+  const fruits = ["Banana", "Orange", "Apple"];
+  document.getElementById("demo_7a").innerHTML = Array.isArray(fruits);
+}
+
+//DEMO_7b------------  method arrayName.isArray()------------------------------
+{
+  const fruits = ["Banana", "Orange", "Apple"];
+  document.getElementById("demo_7b").innerHTML = fruits instanceof Array;
+}

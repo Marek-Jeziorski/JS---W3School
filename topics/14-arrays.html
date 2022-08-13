@@ -267,13 +267,47 @@
           </ul>
           <p>JavaScript has a built in array constructor new Array().</p>
           <p>But you can safely use [] instead :</p>
-          <p><code> const points = new Array();</code></p>
-          <p><code>const points = [];</code></p>
-          <p><code>const points = new Array(40, 100, 1, 5, 25, 10); </code></p>
-          <p><code>const points = [40, 100, 1, 5, 25, 10]</code></p>
+          <p class="code">
+            const points = new Array() <br />
+            const points = [];
+          </p>
+          <p class="code">
+            const points = new Array(40, 100, 1, 5, 25, 10) <br />
+            const points = [40, 100, 1, 5, 25, 10]
+          </p>
+          <p><span class="mark">!</span> A Common Error</p>
+          <p class="code">const points = [40];</p>
+          <p class="att">It's not the same !!!</p>
+          <p class="code">const points = new Array(40);</p>
           <hr />
         </div>
+
         <!--  -->
+        <h4>7 - How to Recognize an Array</h4>
+        <div>
+          <p>
+            The problem is that the JavaScript operator typeof returns "object":
+          </p>
+          <p>SOLUTION 1 :</p>
+          <p class="att">method Array.isArray()</p>
+          <samp>
+            <p class="des">Array.isArray()</p>
+            <p>DEMO_7a</p>
+            <p id="demo_7a"></p>
+          </samp>
+          <p>SOLUTION 2:</p>
+          <p class="att">arrayName instanceof Array</p>
+          <p>
+            The instanceof operator returns true if an object is created by a
+            given constructor:
+          </p>
+          <samp>
+            <p class="des">arrayName instanceof Array</p>
+            <p>DEMO_7B</p>
+            <p id="demo_7b"></p>
+          </samp>
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
         <!--  -->
