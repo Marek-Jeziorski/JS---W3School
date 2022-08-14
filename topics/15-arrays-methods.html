@@ -125,13 +125,132 @@
             <p class="dnum">demo_3b</p>
             <p id="demo_3b"></p>
             <p class="dnum">demo_3c</p>
-            <p id="demo_2c"></p>
+            <p id="demo_3c"></p>
           </samp>
           <hr />
         </div>
+
         <!--  -->
+        <h4>4 - Splicing and Slicing Arays</h4>
+        <div>
+          <p>
+            A)
+            <span class="att"> splice()</span> method <br />
+            - adds new items to an array. <br />
+            - first parameter (2) defines the position where new elements should
+            be added (spliced in) <br />
+            - second parameter (0) defines how many elements should be removed.
+            <br />
+            - rest of the parameters ("Lemon" , "Kiwi") define the new elements
+            to be added.
+          </p>
+
+          <samp>
+            <p class="dnum">demo_4a, 4b</p>
+            <p id="demo_4a"></p>
+            <p id="demo_4b"></p>
+          </samp>
+
+          <p>The splice() method returns an array with the deleted items:</p>
+
+          <samp>
+            <p class="dnum">demo_4c,4d,4e</p>
+            <p id="demo_4c"></p>
+            <p id="demo_4d"></p>
+            <p id="demo_4e"></p>
+          </samp>
+          <p class="att">Using splice() to Remove Elements</p>
+          <p>
+            - first parameter (0) defines the position where new elements should
+            be added (spliced in).<br />
+            - second parameter (1) defines how many elements should be
+            removed.<br />
+            - rest of the parameters are omitted. No new elements will be added.
+          </p>
+          <p>
+            B) <span class="att">slice()</span> method <br />
+            - slices out a piece of an array. <br />
+            - can take two arguments like slice(1, 3). <br />
+            - then selects elements from the start argument, and up to (but not
+            including) the end argument.
+          </p>
+          <samp>
+            <p class="des">
+              This example slices out a part of an array starting from array
+              element 1 ("Orange"):
+            </p>
+            <p class="dnum">demo_4f</p>
+            <p id="demo_4f"></p>
+          </samp>
+          <p>
+            - slice() method creates a new array. <br />
+            - slice() method does not remove any elements from the source array
+          </p>
+          <p></p>
+          <samp>
+            <p class="des">
+              This example slices out a part of an array starting from array
+              element 3 ("Apple")
+            </p>
+            <p class="dnum">demo_4g</p>
+            <p id="demo_4g"></p>
+          </samp>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>5 - Automatic toString()</h4>
+        <div>
+          <p>
+            JavaScript automatically converts an array to a comma separated
+            string when a primitive value is expected. <br />
+            This is always the case when you try to output an array.
+          </p>
+          <p class="code">
+            .inner.HTML = arrayName.toString() <br />
+            is same as <br />
+            .innerHTML = arrayName
+          </p>
+          <p>
+            <span class="mark">!</span> All JavaScript objects have a toString()
+            method.
+          </p>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>6 - Sortin Arrays</h4>
+        <div>
+          <p>
+            <span class="att">sort() </span> method sorts an array
+            alphabetically
+          </p>
+          <samp>
+            <p class="dnum">demo_5a,5b</p>
+            <p id="demo_5a"></p>
+            <p id="demo_5b"></p>
+          </samp>
+          <p>
+            <span class="att">reverse()</span> method reverses the elements in
+            an array.
+          </p>
+          <samp>
+            <p class="dnum">demo_5c,5d</p>
+            <p id="demo_5c"></p>
+            <p id="demo_5d"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> By default, the sort() function sorts
+            values as strings. <br />
+            - if numbers are sorted as strings, "25" is bigger than "100",
+            because "2" is bigger than "1". <br />
+            - Because of this, the sort() method will produce incorrect result
+            when sorting numbers. <br />
+            - You can fix this by providing a
+            <span class="att">compare function</span>:
+          </p>
+          <hr />
+        </div>
         <!--  -->
         <script src="/topics/15-arrays-methods.js"></script>
       </div>

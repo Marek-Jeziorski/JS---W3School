@@ -25,7 +25,7 @@
   document.getElementById("demo_2e").innerHTML = fruits;
   document.getElementById("demo_2f").innerHTML = fruits.push();
 }
-//DEMO_3a ----------------------------------------------
+//DEMO_3A ----------------------------------------------
 {
   const myGirls = ["Cecilie", "Lone"];
   const myBoys = ["Emil", "Tobias", "Linus"];
@@ -33,8 +33,7 @@
 
   document.getElementById("demo_3a").innerHTML = myChildren;
 }
-//DEMO_3b ----------------------------------------------
-
+//DEMO_3B ----------------------------------------------
 {
   const array1 = ["Cecilie", "Lone"];
   const array2 = ["Emil", "Tobias", "Linus"];
@@ -43,4 +42,57 @@
   const myChildren = array1.concat(array2, array3);
 
   document.getElementById("demo_3b").innerHTML = myChildren;
+}
+//DEMO_4A,4B ----------------------------------------------
+{
+  const fruits = ["Bannana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo_4a").innerHTML = fruits;
+  fruits.splice(2, 0, "Marek", "Skwarek", "Kiwi");
+  document.getElementById("demo_4b").innerHTML = fruits;
+}
+//DEMO_4C,4D,4E ----------------------------------------------
+{
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo_4c").innerHTML =
+    "Original Array:<br> " + fruits;
+  let removed = fruits.splice(2, 2, "Lemon", "Kiwi");
+  document.getElementById("demo_4d").innerHTML = "New Array:<br>" + fruits;
+  document.getElementById("demo_4e").innerHTML =
+    "Removed Items:<br> " + removed;
+}
+//DEMO_4F ----------------------------------------------
+{
+  const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+  const citrus = fruits.slice(1);
+  document.getElementById("demo_4f").innerHTML = fruits + "<br><br>" + citrus;
+}
+//DEMO_4G ----------------------------------------------
+{
+  const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+  const citrus = fruits.slice(3);
+  document.getElementById("demo_4g").innerHTML = fruits + "<br><br>" + citrus;
+}
+//DEMO_5A,5b ----------------------------------------------
+
+{
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo_5a").innerHTML = fruits;
+
+  fruits.sort();
+  document.getElementById("demo_5b").innerHTML = fruits;
+}
+//DEMO_5c,5d ----------------------------------------------
+
+{
+  // Create and display an array:
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo_5c").innerHTML = fruits;
+
+  // First sort the array
+  fruits.sort();
+
+  // Then reverse it:
+  fruits.reverse();
+
+  document.getElementById("demo_5d").innerHTML = fruits;
 }
