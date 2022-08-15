@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Arrays Sorting</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Arrays Sorting</h2>
+        <hr />
+
+        <!--  -->
+        <h4>1 - Sorting Arrays</h4>
+        <div>
+          <p>
+            <span class="att">sort() </span> method sorts an array
+            alphabetically
+          </p>
+          <samp>
+            <p class="dnum">demo_1a,1b</p>
+            <p id="demo_1a"></p>
+            <p id="demo_1b"></p>
+          </samp>
+          <p>
+            <span class="att">reverse()</span> method reverses the elements in
+            an array.
+          </p>
+          <samp>
+            <p class="dnum">demo_1c,1d</p>
+            <p id="demo_1c"></p>
+            <p id="demo_1d"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> By default, the sort() function sorts
+            values as strings. <br />
+            - if numbers are sorted as strings, "25" is bigger than "100",
+            because "2" is bigger than "1". <br />
+            - Because of this, the sort() method will produce incorrect result
+            when sorting numbers. <br />
+            - You can fix this by providing a
+            <span class="att">compare function</span>:
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Compare function</h4>
+        <div>
+          <p>
+            The purpose of the compare function is to define an alternative sort
+            order.
+          </p>
+          <p>
+            The compare function should return a negative, zero, or positive
+            value, depending on the arguments:
+          </p>
+          <p class="code">function(a, b){return a - b}</p>
+          <p>
+            When the sort() function compares two values, it sends the values to
+            the compare function, and sorts the values according to the returned
+            (negative, zero, positive) value.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <script src="/topics/16-arrays-sorting.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

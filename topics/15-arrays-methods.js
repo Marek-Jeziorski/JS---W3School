@@ -81,18 +81,3 @@
   fruits.sort();
   document.getElementById("demo_5b").innerHTML = fruits;
 }
-//DEMO_5c,5d ----------------------------------------------
-
-{
-  // Create and display an array:
-  const fruits = ["Banana", "Orange", "Apple", "Mango"];
-  document.getElementById("demo_5c").innerHTML = fruits;
-
-  // First sort the array
-  fruits.sort();
-
-  // Then reverse it:
-  fruits.reverse();
-
-  document.getElementById("demo_5d").innerHTML = fruits;
-}
