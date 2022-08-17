@@ -21,3 +21,19 @@
 
   document.getElementById("demo_1d").innerHTML = fruits;
 }
+//DEMO_2a ----------------------------------------------
+{
+  const points = [40, 100, 1, 5, 25, 10];
+  document.getElementById("demo_2a").innerHTML = points;
+
+  function myFunction1() {
+    points.sort();
+    document.getElementById("demo_2a").innerHTML = points;
+  }
+  function myFunction2() {
+    points.sort(function (a, b) {
+      return b - a;
+    });
+    document.getElementById("demo_2a").innerHTML = points;
+  }
+}
