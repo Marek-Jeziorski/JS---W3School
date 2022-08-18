@@ -17,12 +17,23 @@
         <!--  -->
         <h2>Arrays Iteration</h2>
         <hr />
-        <h4>Array forEach()</h4>
+
+        <!--  -->
+        <h4>1 - Array forEach()</h4>
         <div>
           <p>
-            The forEach() method calls a function (a callback function) once for
-            each array element.
+            <span class="att">forEach()</span> method
+            <u>
+              calls a function (a callback function) once for each array
+              element.
+            </u>
           </p>
+          Note that the function takes 3 arguments:
+          <ul class="att">
+            <li>item value</li>
+            <li>item index</li>
+            <li>array itself</li>
+          </ul>
           <samp>
             <p class="dnum">demo_1a</p>
             <p id="demo_1a"></p>
@@ -30,19 +41,89 @@
           <hr />
         </div>
 
-        <h4>Array map()</h4>
+        <!--  -->
+        <h4>2 - Array map()</h4>
         <div>
           <p>
-            The map() method creates a new array by performing a function on
-            each array element.
+            <span class="att">map() </span> method
+            <u>
+              creates a new array by performing a function on each array element </u
+            >.
           </p>
-
+          <p>
+            map() method does not execute the function for array elements
+            without values.
+          </p>
+          <p>
+            <span class="mark">!</span> The map() method does not change the
+            original array.
+          </p>
           <samp>
             <p class="dnum">demo_2A</p>
             <p id="demo_2a"></p>
           </samp>
           <hr />
         </div>
+
+        <!--  -->
+        <h4>3 - Array filter()</h4>
+        <div>
+          <p>
+            <span class="att">filter()</span> method
+            <u> creates a new array with array elements that passes a test. </u>
+          </p>
+          <samp>
+            <p class="dnum">demo_3a</p>
+            <p id="demo_3a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Array reduce()</h4>
+        <div>
+          <p>
+            <span class="att">reduce()</span> method
+            <u>
+              runs a function on each array element to produce (reduce it to) a
+              single value.
+            </u>
+          </p>
+          <p>method works from left-to-right in the array</p>
+          <p>
+            <span class="mark">! </span>reduce() method does not reduce the
+            original array.
+          </p>
+          <samp>
+            <p class="des">
+              This example finds the sum of all numbers in an array:
+            </p>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <p>Note that the function takes 4 arguments:</p>
+          <ul class="att">
+            <li>total (the initial value / previously returned value)</li>
+            <li>item value</li>
+            <li>item index</li>
+            <li>array itself</li>
+          </ul>
+          <p>The reduce() method can accept an initial value:</p>
+          <samp>
+            <p class="dnum">demo_4b</p>
+            <p id="demo_4b"></p>
+          </samp>
+
+          <hr />
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
         <!--  -->
         <script src="/topics/17-arrays-iteration.js"></script>
       </div>
