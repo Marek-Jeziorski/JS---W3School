@@ -55,3 +55,65 @@
     return total + value;
   }
 }
+//DEMO_5a ----------------------------------------------
+{
+  const numbers = [45, 4, 9, 16, 25];
+  let allOver18 = numbers.every(myFunction);
+
+  document.getElementById("demo_5a").innerHTML = "All over 18 is " + allOver18;
+
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+}
+//DEMO_6a ----------------------------------------------
+
+{
+  const numbers = [45, 4, 9, 16, 25];
+  let someOver18 = numbers.some(myFunction);
+
+  document.getElementById("demo_6a").innerHTML =
+    "Some over 18 is " + someOver18;
+
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+}
+//DEMO_7a ----------------------------------------------
+
+{
+  const fruits = ["Apple", "Orange", "Apple", "Mango"];
+  let position = fruits.indexOf("Apple") + 1;
+
+  document.getElementById("demo_7a").innerHTML =
+    "Apple is found in position " + position;
+}
+//DEMO_8a ----------------------------------------------
+{
+  const numbers = [4, 9, 16, 25, 29];
+  let first = numbers.find(myFunction);
+
+  document.getElementById("demo_8a").innerHTML =
+    "First number over 18 is " + first;
+
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+}
+//DEMO_9a ----------------------------------------------
+{
+  const numbers = [4, 9, 16, 25, 29];
+
+  document.getElementById("demo_9a").innerHTML =
+    "First number over 18 has index " + numbers.findIndex(myFunction);
+
+  function myFunction(value, index, array) {
+    return value > 18;
+  }
+}
+//DEMO_10a ----------------------------------------------
+
+{
+  const myArr = Array.from("ABCDEFG EF");
+  document.getElementById("demo_10a").innerHTML = myArr;
+}
