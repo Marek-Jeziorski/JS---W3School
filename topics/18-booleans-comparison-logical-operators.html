@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Arrays Iteration</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Booleans</h2>
+        <hr />
+
+        <h4>1 - Boolean() Function</h4>
+        <div>
+          <p>
+            use the Boolean() function to find out if an expression (or a
+            variable) is true:
+          </p>
+          <p class="code">Boolean(10 > 9)</p>
+          <p class="code">(10 > 9)</p>
+          <p>
+            <span class="att">!</span> Everyting with a 'Value' is True - exept
+            Zero (0), Null, Undefined, NaN
+          </p>
+          <p>
+            Normally JavaScript booleans are primitive values created from
+            literals:
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Comparison Operators</h4>
+        <div>
+          <p>
+            Comparison and Logical operators are used to test for true or false.
+          </p>
+          <p class="code">if (age < 18) text = "Too young to buy alcohol";</p>
+          <p class="code">== value is equal to...</p>
+          <p class="code">=== value and data type is equal to...</p>
+
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Logical Operators</h4>
+        <div>
+          <p>
+            Logical operators are used to determine the logic between variables
+            or values.
+          </p>
+          <p class="code">if (age < 18) text = "Too young to buy alcohol";</p>
+          <samp>
+            <p class="dnum">demo_3a,3b</p>
+            <p id="demo_3a"></p>
+            <p id="demo_3b"></p>
+          </samp>
+
+          <hr />
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>4 - Conditional (Ternary) Operator</h4>
+        <div>
+          <p>
+            JavaScript also contains a conditional operator that assigns a value
+            to a variable based on some condition
+          </p>
+          <p class="code">variablename = (condition) ? value1:value2</p>
+
+          <samp>
+            <p class="des">
+              If the variable age is a value below 18, the value of the variable
+              voteable will be "Too young", otherwise the value of voteable will
+              be "Old enough".
+            </p>
+            <p class="dnum">demo_4a</p>
+            <p>Input your age and click the button:</p>
+            <input id="age" value="18" />
+            <button onclick="myFunction()">Try it</button>
+
+            <p id="demo_4a"></p>
+          </samp>
+
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - Comparing Different Types</h4>
+        <div>
+          <p>
+            When comparing a string with a number, JavaScript will convert the
+            string to a number when doing the comparison.
+          </p>
+          <p>An empty string converts to 0</p>
+          <p>A non-numeric string converts to NaN which is always false.</p>
+          <p>
+            When comparing two strings, "2" will be greater than "12", because
+            (alphabetically) 1 is less than 2.
+          </p>
+          <p>
+            <span class="mark">!</span> To secure a proper result, variables
+            should be converted to the proper type before comparison:
+          </p>
+          <samp>
+            <p class="dnum">demo_5a</p>
+            <p>Input your age and click the button:</p>
+            <p class="att">Input also NaN</p>
+
+            <input id="age_2" value="11" />
+            <button onclick="myFun_2()">Try it</button>
+
+            <p id="demo_5a"></p>
+          </samp>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/18-booleans.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
