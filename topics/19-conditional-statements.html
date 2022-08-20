@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Conditional Statements</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Conditional Statements</h2>
+        <hr />
+        <div>
+          <p>
+            Conditional statements are used to perform different actions based
+            on different conditions.
+          </p>
+          <p>
+            Very often when you write code, you want to perform different
+            actions for different decisions.
+          </p>
+          <p>In JavaScript we have the following conditional statements:</p>
+          <ul>
+            <li>
+              <sapan class="att">if</sapan> to specify a block of code to be
+              executed, if a specified condition is true
+            </li>
+            <li>
+              <span class="att">else</span> to specify a block of code to be
+              executed, if the same condition is false
+            </li>
+            <li>
+              <span class="att">else if</span> to specify a new condition to
+              test, if the first condition is false
+            </li>
+            <li>
+              <span class="att">switch</span> to specify many alternative blocks
+              of code to be executed
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+        <h4>1 - If, Else</h4>
+        <div>
+          <p>
+            if statement to specify a block of JavaScript code to be executed if
+            a condition is true.
+          </p>
+          <pre>
+            if (condition) {
+              //  block of code to be executed if the condition is true
+            } else {
+              //  block of code to be executed if the condition is false
+            }
+          </pre>
+          <samp>
+            <p class="dnum">demo_1s</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Else if</h4>
+        <div>
+          <p>
+            else if statement to specify a new condition if the first condition
+            is false.
+          </p>
+          <pre>
+            if (condition1) {
+             
+              //  block of code to be executed if condition1 is true
+            
+            } else if (condition2) {
+            
+              //  block of code to be executed if the condition1
+              is false and condition2 is true
+            
+            } else {
+            
+              //  block of code to be executed if the condition1 is false and condition2 is false
+            }
+          </pre>
+
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Switch</h4>
+        <div>
+          <p>
+            switch statement is used to perform different actions based on
+            different conditions.
+          </p>
+          <p>
+            Use the switch statement to select one of many code blocks to be
+            executed.
+          </p>
+
+          <pre>
+            switch(expression) {
+             
+              case x:
+                // code block
+              break;
+             
+              case y:
+                // code block
+              break;
+             
+              default:
+                // code block
+            }
+          </pre>
+
+          <p>This is how it works:</p>
+          <ul>
+            <li>The switch expression is evaluated once.</li>
+            <li>
+              The value of the expression is compared with the values of each
+              case.
+            </li>
+            <li>
+              If there is a match, the associated block of code is executed.
+            </li>
+            <li>If there is no match, the default code block is executed.</li>
+          </ul>
+
+          <samp>
+            <p class="des">
+              The getDay() method returns the weekday as a number between 0 and
+              6. <br />
+              (Sunday=0, Monday=1, Tuesday=2 ..)
+            </p>
+            <p class="des">
+              This example uses the weekday number to calculate the weekday
+              name:
+            </p>
+            <p class="dnum">demo_3a</p>
+            <p id="demo_3a"></p>
+          </samp>
+
+          <p>
+            When JavaScript reaches a break keyword, it breaks out of the switch
+            block.
+          </p>
+          <p>This will stop the execution inside the switch block.</p>
+
+          <p>
+            It is not necessary to break the last case in a switch block. The
+            block breaks (ends) there anyway.
+          </p>
+
+          <p>
+            <span class="mark">! </span>
+            If you omit the break statement, the next case will be executed even
+            if the evaluation does not match the case.
+          </p>
+
+          <p>
+            The <span class="att">default keyword </span>specifies the code to
+            run if there is no case match:
+          </p>
+
+          <samp>
+            <p class="des">
+              The getDay() method returns the weekday as a number between 0 and
+              6
+            </p>
+            <p class="des">
+              If today is neither Saturday (6) nor Sunday (0), write a default
+              message:
+            </p>
+
+            <p class="dnum">demo_3b</p>
+            <p id="demo_3b"></p>
+          </samp>
+          <p>
+            The default case does not have to be the last case in a switch
+            block:
+          </p>
+          <p>
+            If default is not the last case in the switch block, remember to end
+            the default case with a break.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Switch - Common Code Blocks</h4>
+        <div>
+          <p>
+            Sometimes you will want different switch cases to use the same code.
+          </p>
+          <samp>
+            <p class="des">
+              In this example case 4 and 5 share the same code block, and 0 and
+              6 share another code block:
+            </p>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - Switching Details</h4>
+        <div>
+          <p>
+            If multiple cases matches a case value, the first case is selected.
+          </p>
+          <p>
+            If no matching cases are found, the program continues to the default
+            label.
+          </p>
+          <p>
+            If no default label is found, the program continues to the
+            statement(s) after the switch.
+          </p>
+          <p>Switch cases use strict comparison (===).</p>
+          <p>The values must be of the same type to match.</p>
+          <p>
+            A strict comparison can only be true if the operands are of the same
+            type.
+          </p>
+          <p>In this example there will be no match for x:</p>
+          <samp>
+            <p class="dnum">demo_5a</p>
+            <p id="demo_5a"></p>
+          </samp>
+          <hr />
+        </div>
+        <!--  -->
+        <script src="/topics/19-conditional-statements.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
