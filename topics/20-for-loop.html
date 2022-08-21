@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>For Loop</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>For Loop</h2>
+        <hr />
+
+        <!--  -->
+        <h4>1 - Kinds of Loops</h4>
+        <div>
+          <ul>
+            <li>for - loops through a block of code a number of times</li>
+            <li>for/in - loops through the properties of an object</li>
+            <li>for/of - loops through the values of an iterable object</li>
+            <li>
+              while - loops through a block of code while a specified condition
+              is true
+            </li>
+            <li>
+              do/while - also loops through a block of code while a specified
+              condition is true
+            </li>
+          </ul>
+          <p>Loops can execute a block of code a number of times.</p>
+          <p>
+            Loops are handy, if you want to run the same code over and over
+            again, each time with a different value.
+          </p>
+          <p>Often this is the case when working with arrays:</p>
+          <pre>
+            text += cars[0] + "br>";
+            text += cars[1] + "br>";
+            text += cars[2] + "br>";
+          </pre>
+          <p>instead:</p>
+          <pre>
+            for (let i = 0; i < cars.length; i++) {
+              
+              text += cars[i] + "br>";
+            }
+          </pre>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - For Loop</h4>
+        <div>
+          <p>for statement creates a loop with 3 optional expressions:</p>
+          <pre>
+            for (expression 1; expression 2; expression 3) {
+             
+              // code block to be executed
+            }
+          </pre>
+          <p>
+            Expression 1 is executed (one time) before the execution of the code
+            block. <br />
+            Expression 2 defines the condition for executing the code block.
+            <br />
+            Expression 3 is executed (every time) after the code block has been
+            executed.
+          </p>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <p class="att">Expression 1</p>
+          <p>
+            Normally you will use expression 1 to initialize the variable used
+            in the loop (let i = 0).
+          </p>
+          <p>
+            This is not always the case, JavaScript doesn't care. Expression 1
+            is optional.
+          </p>
+          <p>
+            You can initiate many values in expression 1 (separated by comma):
+          </p>
+          <samp>
+            <p class="dnum">demo_2b</p>
+            <p id="demo_2b"></p>
+          </samp>
+          <p>
+            And you can omit expression 1 (like when your values are set before
+            the loop starts):
+          </p>
+          <samp>
+            <p class="dnum">demo_2c</p>
+            <p id="demo_2c"></p>
+          </samp>
+          <p class="att">Expression 2</p>
+          <p>
+            Often expression 2 is used to evaluate the condition of the initial
+            variable.
+          </p>
+          <p>
+            This is not always the case, JavaScript doesn't care. Expression 2
+            is also optional.
+          </p>
+          <p>
+            If expression 2 returns true, the loop will start over again, if it
+            returns false, the loop will end.
+          </p>
+          <p>
+            <span class="mark">!</span> If you omit expression 2, you must
+            provide a break inside the loop. Otherwise the loop will never end.
+            This will crash your browser.
+          </p>
+          <p class="att">Expression 3</p>
+          <p>
+            Often expression 3 increments the value of the initial variable.
+          </p>
+
+          <p>
+            This is not always the case, JavaScript doesn't care, and expression
+            3 is optional.
+          </p>
+
+          <p>
+            Expression 3 can do anything like negative increment (i--), positive
+            increment (i = i + 15), or anything else.
+          </p>
+
+          <p>
+            Expression 3 can also be omitted (like when you increment your
+            values inside the loop):
+          </p>
+
+          <samp>
+            <p class="dnum">demo_2d</p>
+            <p id="demo_2d"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Loop Scope</h4>
+        <div>
+          <p>Using var in a loop:</p>
+          <samp>
+            <p class="dnum">demo_3a,3b</p>
+            <p id="demo_3a"></p>
+          </samp>
+          <p>Using let in a loop:</p>
+          <samp>
+            <p class="dnum">demo_3b,3c</p>
+            <p id="demo_3b"></p>
+            <p id="demo_3c"></p>
+          </samp>
+
+          <p>
+            In the first example, using var, the variable declared in the loop
+            redeclares the variable outside the loop.
+          </p>
+
+          <p>
+            In the second example, using let, the variable declared in the loop
+            does not redeclare the variable outside the loop.
+          </p>
+
+          <p>
+            When let is used to declare the i variable in a loop, the i variable
+            will only be visible within the loop.
+          </p>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/20-for-loop.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
