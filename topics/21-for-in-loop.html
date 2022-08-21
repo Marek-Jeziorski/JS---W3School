@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>For In Loop</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>For In Loop</h2>
+        <hr />
+
+        <!--  -->
+        <h4>1 - For in Loop</h4>
+        <div>
+          <p>
+            <span class="att">for in</span> statement loops through the
+            properties of an Object:
+          </p>
+          <pre>
+            for (key in object) {
+             
+              // code block to be executed
+            }
+          </pre>
+
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <ul>
+            <li>The for in loop iterates over a person object</li>
+            <li>Each iteration returns a key (x)</li>
+            <li>The key is used to access the value of the key</li>
+            <li>The value of the key is person[x]</li>
+          </ul>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - For In Over Arrays</h4>
+        <div>
+          <p>for in statement can also loop over the properties of an Array:</p>
+          <pre>
+            for (variable in array) {
+             
+              code
+            }
+          </pre>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> Do not use for in over an Array if the
+            index order is important.
+          </p>
+          <p>
+            The index order is implementation-dependent, and array values may
+            not be accessed in the order you expect.
+          </p>
+          It is better to use a for loop, a for of loop, or Array.forEach() when
+          the order is important.
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Array.forEach()</h4>
+        <div>
+          forEach() method calls a function (a callback function) once for each
+          array element.
+          <samp>
+            <p class="dnum">demo_3a</p>
+            <p id="demo_3a"></p>
+          </samp>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/21-for-in-loop.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
