@@ -1,6 +1,11 @@
 //DEMO_1A ----------------------------------------------
 {
-  const person = { fname: "John", lname: "Doe", age: 25 };
+  const person = {
+    fname: "John",
+    lname: "Doe",
+    age: 25,
+    friends: ["ann", " mark", " joe"],
+  };
 
   let txt = "";
   for (let x in person) {

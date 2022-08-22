@@ -22,7 +22,9 @@
 //DEMO_2B ----------------------------------------------
 {
   const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
   let i, len, text;
+
   for (i = 0, len = cars.length, text = ""; i < len; i++) {
     text += cars[i] + "<br>";
   }
@@ -58,12 +60,19 @@
 //DEMO_3A ----------------------------------------------
 {
   var i = 5;
-  for (var i = 0; i < 10; i++) {
+  let txt = "";
+
+  for (var i = 4; i < 10; i++) {
     // some statements
+    txt += i + "<br>";
   }
+
+  document.getElementById("demo_3a+").innerHTML = "Inside the loop i = " + txt;
+
   document.getElementById("demo_3a").innerHTML =
-    "Inside and Outside Loop i = " + i;
+    "After finished/out Loop i = " + i;
 }
+
 //DEMO_3B,3C ----------------------------------------------
 {
   let i = 5;
@@ -74,5 +83,6 @@
     document.getElementById("demo_3b").innerHTML = "Inside Loop i = " + i;
   }
 
-  document.getElementById("demo_3c").innerHTML = "Outside Loop i = " + i;
+  document.getElementById("demo_3c").innerHTML =
+    "After finished/out Loop i = " + i;
 }
