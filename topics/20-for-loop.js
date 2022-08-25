@@ -59,13 +59,19 @@
 }
 //DEMO_3A ----------------------------------------------
 {
-  var i = 5;
+  var i = 5; // first dec init i variable
+  document.getElementById("demo_3a++").innerHTML = i;
   let txt = "";
 
+  //second dec and init i variable
   for (var i = 4; i < 10; i++) {
     // some statements
     txt += i + "<br>";
   }
+  /*  result of this loop function is:
+1 - add each values of i to txt variable and return it
+2 - increase value of i to 10 and return it 
+*/
 
   document.getElementById("demo_3a+").innerHTML = "Inside the loop i = " + txt;
 

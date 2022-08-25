@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Errors</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Errors</h2>
+        <div>
+          <p>
+            <span class="att"> try</span> statement defines a code block to run
+            (to try).
+          </p>
+
+          <p>
+            <span class="att">catch</span> statement defines a code block to
+            handle any error.
+          </p>
+
+          <p>
+            <span class="att">finally</span> statement defines a code block to
+            run regardless of the result.
+          </p>
+
+          <p>
+            <span class="att">throw</span> statement defines a custom error.
+          </p>
+        </div>
+
+        <!--  -->
+        <h4>1 - Try and Catch</h4>
+        <div>
+          <p>
+            try statement allows you to define a block of code to be tested for
+            errors while it is being executed.
+          </p>
+          <p>
+            catch statement allows you to define a block of code to be executed,
+            if an error occurs in the try block.
+          </p>
+          <p>statements try and catch come in pairs:</p>
+          <pre>
+            try {
+             
+              Block of code to try
+            }
+            catch(err) {
+             
+              Block of code to handle errors
+            }
+          </pre>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <p>
+            When an error occurs, JavaScript will normally stop and generate an
+            error message.
+          </p>
+          <p>
+            The technical term for this is: JavaScript will
+            <span class="att"> throw an exception (throw an error) </span>.
+          </p>
+          <p>
+            <span class="mark">!</span> JavaScript will actually create an Error
+            object with two properties:<span class="att">
+              name and message</span
+            >
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - throw Statement</h4>
+        <div>
+          <p>throw statement allows you to create a custom error.</p>
+          <p>Technically you can throw an exception (throw an error).</p>
+          <p>
+            The exception can be a JavaScript String, a Number, a Boolean or an
+            Object:
+          </p>
+          <pre>
+            throw "Too big";    // throw a text
+            throw 500;          // throw a number
+          </pre>
+          <p>
+            If you use throw together with try and catch, you can control
+            program flow and generate custom error messages.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Input Validation Example</h4>
+        <div>
+          <p>
+            This example examines input. If the value is wrong, an exception
+            (err) is thrown.
+          </p>
+          <p>
+            The exception (err) is caught by the catch statement and a custom
+            error message is displayed:
+          </p>
+          <samp>
+            <p>Please input a number between 5 and 10:</p>
+
+            <p>
+              <input id="demo_3a" type="text" />
+              <button type="button" onclick="myFunction()">Test Input</button>
+            </p>
+
+            <p id="p01"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - finally Statement</h4>
+        <div>
+          <p>
+            finally statement lets you execute code, after try and catch,
+            regardless of the result:
+          </p>
+          <pre>
+            try {
+              Block of code to try
+            }
+            catch(err) {
+              Block of code to handle errors
+            }
+            finally {
+              Block of code to be executed regardless of the try / catch result
+            }
+          </pre>
+          <samp>
+            <p>Please input a number between 5 and 10:</p>
+            <p>
+              <input id="demo_4a" type="text" />
+              <button type="button" onclick="myFunction_2()">Test Input</button>
+            </p>
+            <p id="p02"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+
+        <!--  -->
+        <!--  -->
+        <script src="/topics/29-errors.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
