@@ -16,19 +16,208 @@
       <div id="content">
         <!--  -->
         <h2>This</h2>
-        <p>In this example, <b>this</b> refers to the <b>person</b> object</p>
-        <p>Because <b>fullName</b> is a method of the <b>person</b> object.</p>
-        <samp>
-          <p class="dnum">demo_1a</p>
-          <p id="demo_1a"></p>
-        </samp>
+        <div>
+          <p>In this example, <b>this</b> refers to the <b>person</b> object</p>
+          <p>
+            Because <b>fullName</b> is a method of the <b>person</b> object.
+          </p>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>1 - What is this?</h4>
+        <div>
+          <p>In JavaScript, the <b>this</b> keyword refers to an object.</p>
+          <p>
+            Which object depends on <b>how this is being invoked</b> (used or
+            called).
+          </p>
+          <p>
+            this keyword refers to different objects depending on how it is
+            used:
+          </p>
+          <ul>
+            <li>In an object method, this refers to the object.</li>
+            <li>Alone, this refers to the global object.</li>
+            <li>In a function, this refers to the global object.</li>
+            <li>In a function, in strict mode, this is undefined.</li>
+            <li>
+              In an event, this refers to the element that received the event.
+            </li>
+            <li>
+              Methods like call(), apply(), and bind() can refer this to any
+              object.
+            </li>
+          </ul>
+          <p>
+            <span class="mark">!</span> this is not a variable. It is a keyword.
+            You cannot change the value of this.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - this in a Method</h4>
+        <div>
+          <p>When used in an object method, this refers to the object.</p>
+
+          <p>
+            In the example on top of this page, this refers to the person
+            object.
+          </p>
+
+          <p>Because the fullName method is a method of the person object.</p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - this Alone</h4>
+        <div>
+          <p>When used alone, this refers to the global object</p>
+          <p>Because this is running in the global scope.</p>
+          <p>In a browser window the global object is [object Window]:</p>
+          <samp>
+            <p class="dnum">demo_3a</p>
+            <p id="demo_3a"></p>
+          </samp>
+          <p>
+            In strict mode, when used alone, this also refers to the global
+            object:
+          </p>
+        </div>
+
+        <!--  -->
+        <h4>4 - this in a Function (Default)</h4>
+        <div>
+          <p>
+            In a function, the global object is the default binding for this.
+          </p>
+          <p>In a browser window the global object is [object Window]:</p>
+          <samp>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - this in a Function (Strict)</h4>
+        <div>
+          <p>JavaScript strict mode does not allow default binding.</p>
+          <p>So, when used in a function, in strict mode, this is undefined.</p>
+          <samp>
+            <p class="dnum">demo_5a</p>
+            <p id="demo_5a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>6 - this in Event Handlers</h4>
+        <div>
+          <p>
+            In HTML event handlers, this refers to the HTML element that
+            received the event:
+          </p>
+          <samp>
+            <p class="dnum">demo_6a</p>
+            <button onclick="this.style.display='none'">
+              Click to Remove Me!
+            </button>
+            <p></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>7 - Object Method Binding</h4>
+        <div>
+          <p>In these examples, this is the person object:</p>
+          <samp>
+            <p class="dnum">demo_7a,7b</p>
+            <p id="demo_7a"></p>
+            <p id="demo_7b"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>8 - Explicit Function Binding</h4>
+        <div>
+          <p>
+            The call() and apply() methods are predefined JavaScript methods.
+          </p>
+          <p>
+            They can both be used to call an object method with another object
+            as argument.
+          </p>
+          <p>
+            The example below calls person1.fullName with person2 as an
+            argument, this refers to person2, even if fullName is a method of
+            person1:
+          </p>
+          <samp>
+            <p class="dnum">demo_8a</p>
+            <p id="demo_8a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>9 - Function Borrowing</h4>
+        <div>
+          <p>
+            With the bind() method, an object can borrow a method from another
+            object.
+          </p>
+          <p>This example creates 2 objects (person and member).</p>
+          <p>
+            The member object borrows the fullname method from the person
+            object:
+          </p>
+          <samp>
+            <p class="dnum">demo_9a</p>
+            <p id="demo_9a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>10 - This Precedence</h4>
+        <div>
+          <p>
+            To determine which object this refers to; Use the following
+            precedence of order.
+          </p>
+          <ul>
+            <li>1 bind()</li>
+            <li>2 apply() and call()</li>
+            <li>3 Object method</li>
+            <li>4 Global scopel scope</li>
+          </ul>
+
+          <p>Is this in a function being called using bind()?</p>
+
+          <p>Is this in a function is being called using apply()?</p>
+
+          <p>Is this in a function is being called using call()?</p>
+
+          <p>Is this in an object function (method)?</p>
+
+          <p>Is this in a function in the global scope.</p>
+
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
         <!--  -->
         <!--  -->
         <!--  -->
-        <!--  -->
-        <!--  -->
+
         <script src="/topics/30-this.js"></script>
       </div>
     </div>
