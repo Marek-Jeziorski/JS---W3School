@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Classes</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Classes</h2>
+        <p>JavaScript Classes are templates for JavaScript Objects.</p>
+
+        <!--  -->
+        <h4>1 - Class Syntax</h4>
+        <div>
+          <p>Use the keyword class to create a class.</p>
+          <p>
+            Always add a method named <span class="att">constructor()</span>:
+          </p>
+          <pre>
+            class ClassName {
+             
+              constructor() { ... }
+            }
+          </pre>
+          <pre>
+            class Car {
+             
+              constructor(name, year) {
+              
+                this.name = name;
+                this.year = year;
+              }
+            }
+          </pre>
+          <p>The example above creates a class named "Car".</p>
+          <p>The class has two initial properties: "name" and "year".</p>
+          <p>A JavaScript <span class="att">class is not an object</span>.</p>
+          <p class="att">It is a template for objects.</p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Using Class</h4>
+        <div>
+          <p>When you have a class, you can use the class to create objects:</p>
+          <p>
+            The constructor method is called automatically when a new object is
+            created.
+          </p>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Constructor Method</h4>
+        <div>
+          <p>The constructor method is a special method:</p>
+          <ul>
+            <li>It has to have the exact name "constructor"</li>
+            <li>It is executed automatically when a new object is created</li>
+            <li>It is used to initialize object properties</li>
+          </ul>
+          <p>
+            <span class="mark">!</span> If you do not define a constructor
+            method, JavaScript will add an empty constructor method.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Class Methods</h4>
+        <div>
+          <p>
+            Class methods are created with the same syntax as object methods.
+          </p>
+
+          <p>Use the keyword class to create a class.</p>
+
+          <p>Always add a constructor() method.</p>
+
+          <p>Then add any number of methods.</p>
+          <pre>
+            class ClassName {
+             
+              constructor() { ... }
+             
+              method_1() { ... }
+              method_2() { ... }
+              method_3() { ... }
+            }
+          </pre>
+
+          <p>Create a Class method named "age", that returns the Car age:</p>
+          <samp>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+
+          <hr />
+        </div>
+        <!--  -->
+        <script src="/topics/33-classes.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
