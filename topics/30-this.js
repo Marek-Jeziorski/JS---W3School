@@ -53,6 +53,7 @@
   // Display data from the object:
   document.getElementById("demo_7a").innerHTML = person.myFunction();
 }
+//DEMO 7A -------------------------------------------------
 
 {
   // Create an object:
@@ -101,6 +102,6 @@
   };
 
   let fullName = person.fullName.bind(member);
-
+  console.log(this);
   document.getElementById("demo_9a").innerHTML = fullName();
 }

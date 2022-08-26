@@ -54,14 +54,20 @@
 }
 
 //DEMO_3B ----------------------------------------------
+
+// this is [object Window]
 {
-  hello = () => {
+  // this is property of [object Window]
+  var witaj;
+
+  // this is method of [object Window] (it's defined in Window object)
+  witaj = () => {
     document.getElementById("demo_3b").innerHTML += this;
   };
 
   //The window object calls the function:
-  window.addEventListener("load", hello);
+  window.addEventListener("load", witaj);
 
-  //A button object calls the function:
-  document.getElementById("btn_2").addEventListener("click", hello);
+  //A button object calls the function WHICH OWNER IS [object Window]:
+  document.getElementById("btn_2").addEventListener("click", witaj);
 }
