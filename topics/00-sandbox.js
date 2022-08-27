@@ -8,3 +8,11 @@
     document.getElementById("demo_1a").innerHTML = err;
   }
 }
+
+//DEMO-1a -------------------------------------
+
+{
+  let x = 15 * 5;
+  debugger;
+  document.getElementById("demo_2a").innerHTML = x;
+}
