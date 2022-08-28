@@ -62,8 +62,9 @@ li {
 }
 
 #content {
-  padding: 0 16px;
   flex: 12;
+
+  padding: 0 16px;
   border: 1px solid limegreen;
   padding-right: 140px;
 }

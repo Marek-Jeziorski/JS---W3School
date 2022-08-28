@@ -128,15 +128,86 @@
             definition.
           </p>
           <p>
-            JavaScript objects are containers for named values, called
-            properties and methods.
+            JavaScript<u>
+              objects are containers for named values, called properties and
+              methods </u
+            >.
           </p>
           <hr />
         </div>
 
         <!--  -->
         <h4>5 - Creating Object - using an object literal</h4>
+        <div>
+          <p>
+            Define an object constructor, and then create objects of the
+            constructed type.
+          </p>
+          <p>Create a single object, using an object literal.</p>
+          <p>This is the easiest way to create a JavaScript Object.</p>
+          <p>
+            Using an object literal, you both define and create an object in one
+            statement.
+          </p>
+          <pre>
+            const person = {
+            
+              property1: "srtring",
+              property2: 10,
+              property3: [array],
+              property4: {object},
+              method1: function(){}
+            };
+          </pre>
+          <p>Or you can create an empty object, and then add properties:</p>
+          <pre>
+            const person = {};
+
+            person.firstName = "John";
+            person.lastName = "Doe";
+            person.age = 50;
+            person.eyeColor = "blue";
+          </pre>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>6 - Objects are Mutable</h4>
+        <div>
+          <p>
+            Objects are mutable: They are addressed by reference, not by value.
+          </p>
+          <p>
+            If person is an object, the following statement will not create a
+            copy of person:
+          </p>
+          <pre>
+            const x = person;
+            
+            // Will not create a copy of person.
+          </pre>
+          <p>
+            <span class="mark">!</span> The
+            <span class="att">
+              object x is not a copy of person. It is person.
+            </span>
+            Both x and person are the same object.
+          </p>
+
+          <p>
+            Any <span class="att">changes to x will also change person</span>,
+            because x and person are the same object.
+          </p>
+          <samp>
+            <p class="dnum">demo_6a</p>
+            <p id="demo_6a"></p>
+          </samp>
+          <samp>
+            <p class="dnum">demo_6b</p>
+            <p id="demo_6b"></p>
+          </samp>
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
         <!--  -->
