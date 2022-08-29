@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Object - Properties</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Object - Properties</h2>
+        <div>
+          <p>Properties are the values associated with a JavaScript object.</p>
+          <p>A JavaScript object is a collection of unordered properties.</p>
+          <p>
+            Properties can usually be changed, added, and deleted, but some are
+            read only.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>1 -Accessing Properties</h4>
+        <div>
+          <pre>
+            objectName.property      // person.age
+
+            objectName["property complex"]   // person["age"]
+            
+            objectName[expression]   // x = "age"; person[x]
+          </pre>
+          <p>The expression must evaluate to a property name.</p>
+          <p>
+            <sapn class="att">for...in</sapn> statement loops through the
+            properties of an object.
+          </p>
+          <pre>
+            for (let variable in object) {
+
+              // code to be executed
+            }
+          </pre>
+          <p>
+            The block of code inside of the for...in loop will be executed once
+            for each property.
+          </p>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Adding/Deleting Properties</h4>
+        <div>
+          <pre>
+            person.age = 42;
+
+            delete person.age;
+
+            delete person["age"];
+          </pre>
+          <p>
+            The delete keyword deletes both the value of the property and the
+            property itself.
+          </p>
+          <p>
+            The delete operator should not be used on predefined JavaScript
+            object properties. It can crash your application.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Nested Objects</h4>
+        <div>
+          <pre>
+              myObj = {
+               
+                name:"John",
+                age:30,
+               
+                cars: {
+                  car1:"Ford",
+                  car2:"BMW",
+                  car3:"Fiat"
+                }
+              }
+          </pre>
+          <p>access:</p>
+          <pre>
+            myObj.cars.car2;
+
+            myObj.cars["car2"];
+
+            myObj["cars"]["car2"];
+
+            let p1 = "cars";
+            let p2 = "car2";
+         
+            myObj[p1][p2];
+          </pre>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Nested Arrays and Objects</h4>
+        <div>
+          <p>
+            Values in objects can be arrays, and values in arrays can be
+            objects:
+          </p>
+          <pre>
+            const myObj = {
+             
+              name: "John",
+              age: 30,
+             
+              cars: [
+                {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+                {name:"BMW", models:["320", "X3", "X5"]},
+                {name:"Fiat", models:["500", "Panda"]}
+              ]
+            }
+          </pre>
+          <p>
+            To access arrays inside arrays, use a for-in loop for each array:
+          </p>
+          <samp>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - Property atributes</h4>
+        <div>
+          <p>All properties have a name. In addition they also have a value.</p>
+
+          <p>The value is one of the property's attributes.</p>
+
+          <p>Other attributes are: enumerable, configurable, and writable.</p>
+
+          <p>
+            These attributes define how the property can be accessed (is it
+            readable?, is it writable?)
+          </p>
+
+          <p>
+            In JavaScript, all attributes can be read, but only the value
+            attribute can be changed (and only if the property is writable).
+          </p>
+
+          <p>
+            ( ECMAScript 5 has methods for both getting and setting all property
+            attributes)
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>6 - Prototype Properties</h4>
+        <div>
+          <p>JavaScript objects inherit the properties of their prototype.</p>
+
+          <p>
+            The delete keyword does not delete inherited properties, but if you
+            delete a prototype property, it will affect all objects inherited
+            from the prototype.
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>7 - Methods</h4>
+        <div>
+          <p>methods are actions that can be performed on objects.</p>
+          <p>method is a property containing a function definition.</p>
+          <p>You access an object method with the following syntax:</p>
+          <pre>
+            name = person.fullName();
+          </pre>
+          <p>
+            If you access the fullName property, without (), it will return the
+            function definition:
+          </p>
+          <pre>
+            name = person.fullName;
+          </pre>
+          <p>Adding a new method to an object is easy:</p>
+          <pre>
+            person.name = function () {
+            
+              return this.firstName + " " + this.lastName;
+            };
+          </pre>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>8 - Using Built-In Methods</h4>
+        <div>
+          <pre>
+            let message = "Hello world!";
+            let x = message.toUpperCase();
+          </pre>
+          <pre>
+            person.name = function () {
+              return (this.firstName + " " + this.lastName).toUpperCase();
+            };
+          </pre>
+          <hr />
+        </div>
+        <!--  -->
+        <script src="/topics/36-object-properties.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
