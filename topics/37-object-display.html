@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Object-Display</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Object-Display</h2>
+        <div>
+          <p>Some common solutions to display JavaScript objects are:</p>
+          <ul>
+            <li>Object Properties in a Loop</li>
+            <li>Object Properties by name</li>
+            <li>Object using Object.values()</li>
+            <li>Object using JSON.stringify()</li>
+          </ul>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>1 - Displaying Object Properties</h4>
+        <div>
+          <p>The properties of an object can be displayed as a string:</p>
+          <pre>
+            const person = {
+              name: "John",
+              age: 30,
+              city: "New York"
+            };
+            
+            document.getElementById("demo").innerHTML =
+            person.name + "," + person.age + "," + person.city;
+          </pre>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Displaying the Object in a Loop</h4>
+        <div>
+          <p>The properties of an object can be collected in a loop:</p>
+          <pre>
+            const person = {
+              name: "John",
+              age: 30,
+              city: "New York"
+            };
+            
+            let txt = "";
+
+            for (let <span class="ico">x</span> in <span class="ico">person</span>) {
+            txt += <span class="ico">person[x]</span> + " ";
+            };
+            
+            document.getElementById("demo").innerHTML = txt;
+          </pre>
+          <p>You must use <span class="ico">person[x]</span> in the loop.</p>
+
+          <p>
+            <span class="ico">person.x</span> will not work (Because x is a
+            variable).
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>3 - Using Object.values()</h4>
+        <div>
+          <p>
+            Any JavaScript object can be converted to an array using
+            Object.values():
+          </p>
+          <pre>
+            const person = {
+              name: "John",
+              age: 30,
+              city: "New York"
+            };
+            
+            const myArray = <span class="ico">Object.values(person)</span>;
+          </pre>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>4 - Using JSON.stringify()</h4>
+        <div>
+          <p>
+            object can be stringified (converted to a string) with the
+            JavaScript function JSON.stringify():
+          </p>
+          <pre>
+            const person = {
+              name: "John",
+              age: 30,
+              city: "New York"
+            };
+            
+            let myString = <span class="ico">JSON.stringify(person)</span>;
+            document.getElementById("demo").innerHTML = myString;
+          </pre>
+          <samp>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/37-object-display.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

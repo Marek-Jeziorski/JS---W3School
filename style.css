@@ -110,3 +110,8 @@ code,
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.ico {
+  color: greenyellow;
+  font-weight: 400;
+}
