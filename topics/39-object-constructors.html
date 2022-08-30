@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Object Constructors</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Object Constructors</h2>
+        <div>
+          <hr />
+          <pre>
+            function <span class="att">Person</span>(first, last, age, eye) {
+          
+              this.firstName = first;
+              this.lastName = last;
+              this.age = age;
+              this.eyeColor = eye;
+            }
+          </pre>
+          <p>
+            It is considered good practice to name constructor functions with an
+            <span class="att">upper-case first letter</span>.
+          </p>
+          <p>
+            In a constructor function <span class="att">this</span> does not
+            have a value. It is a substitute for the new object.
+          </p>
+          <p>
+            The value of this will become the new object when a new object is
+            created.
+          </p>
+
+          <samp>
+            <p class="dnum">demo</p>
+            <p id="demo"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Object Types (Blueprints) (Classes)</h4>
+        <div>
+          <p>
+            The examples <u>from the previous chapters</u> are limited. They
+            only create <u>single objects</u>.
+          </p>
+          <p>
+            Sometimes we need a <span class="att">"blueprint"</span> for
+            creating <span class="att">many objects</span> of the
+            <span class="att">same "type"</span>.
+          </p>
+          <p>
+            The way to create an <span class="att">"object type"</span>, is to
+            use an <span class="att">object constructor function</span>.
+          </p>
+          <p>
+            In the example above, function Person() is an object constructor
+            function.
+          </p>
+          <p>
+            <span class="mark">!</span> Objects of the same type are created by
+            <span class="att">calling the constructor function</span> with the
+            <span class="att">new </span>keyword:
+          </p>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <p><u>Adding a Property to an Object</u></p>
+          <pre>
+            myFather.nationality = "English";
+          </pre>
+          <p><u>Adding a Method to an Object</u></p>
+          <pre>
+            myFather.name = function () {
+              
+              return this.firstName + " " + this.lastName;
+            };
+          </pre>
+          <p>
+            The method will be added to myFather. Not to myMother. (Not to any
+            other person objects)
+          </p>
+          <p><u>Adding a Property to a Constructor</u></p>
+          <p>
+            <span class="mark">!</span> You cannot add a new property to an
+            object constructor the same way you add a new property to an
+            existing object:
+          </p>
+          <p>
+            To add a new property to a constructor, you must add it to the
+            constructor function:
+          </p>
+          <p>
+            <span class="mark">!</span> This way object properties can have
+            default values.
+          </p>
+          <hr />
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/39-object-constructors.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
