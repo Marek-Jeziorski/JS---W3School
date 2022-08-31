@@ -48,7 +48,7 @@
         </div>
 
         <!--  -->
-        <h4>2 - Object Types (Blueprints) (Classes)</h4>
+        <h4>1 - Object Types (Blueprints) (Classes)</h4>
         <div>
           <p>
             The examples <u>from the previous chapters</u> are limited. They
@@ -105,9 +105,50 @@
             <span class="mark">!</span> This way object properties can have
             default values.
           </p>
+          <p><u>Adding a Method to a Constructor</u></p>
+          <p>Your constructor function can also define methods:</p>
+          <p>
+            You cannot add a new method to an object constructor the same way
+            you add a new method to an existing object.
+          </p>
+          <p>
+            Adding methods to an object constructor must be done inside the
+            constructor function:
+          </p>
+          <samp>
+            <p class="dnum">demo_1b</p>
+            <p class="des">
+              The changeName() function assigns the value of name to the
+              person's lastName property.
+            </p>
+            <p class="des">
+              JavaScript knows which person you are talking about by
+              "substituting" this with myMother.
+            </p>
+            <p id="demo_1b"></p>
+          </samp>
           <hr />
         </div>
+
         <!--  -->
+        <h4>2 - Built-in JavaScript Constructors</h4>
+        <div>
+          <pre>
+            let x1 = "";             // new primitive string
+            let x2 = 0;              // new primitive number
+            let x3 = false;          // new primitive boolean
+
+            const x4 = {};           // new Object object
+            const x5 = [];           // new Array object
+            const x6 = /()/          // new RegExp object
+            const x7 = function(){}; // new function
+          </pre>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
         <!--  -->

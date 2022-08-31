@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Object Constructors</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!--  -->
+        <h2>Object Prototypes</h2>
+        <div>
+          <p>
+            All JavaScript objects inherit properties and methods from a
+            prototype.
+          </p>
+          <p>
+            To add a new property to a constructor, you must add it to the
+            constructor function:
+          </p>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>1 - Prototype Inheritance</h4>
+        <div>
+          <p>
+            All JavaScript objects inherit properties and methods from a
+            prototype:
+          </p>
+          <ul>
+            <li>Date objects inherit from Date.prototype</li>
+            <li>Array objects inherit from Array.prototype</li>
+            <li>Person objects inherit from Person.prototype</li>
+          </ul>
+          <p>
+            The Object.prototype is on the top of the prototype inheritance
+            chain:
+          </p>
+
+          <p>
+            Date objects, Array objects, and Person objects inherit from
+            Object.prototype.
+          </p>
+
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>2 - Using the prototype Property</h4>
+        <div>
+          <p>
+            Sometimes you want to add new properties (or methods) to all
+            existing objects of a given type.
+          </p>
+          <p>
+            Sometimes you want to add new properties (or methods) to an object
+            constructor.
+          </p>
+          <p>
+            The JavaScript prototype property allows you to add new properties
+            and methods to object constructors:
+          </p>
+          <pre>
+            function Person(first, last, age, eyecolor) {
+              this.firstName = first;
+              this.lastName = last;
+              this.age = age;
+              this.eyeColor = eyecolor;
+            }
+            
+            Person.<span class="att">prototype</span>.nationality = "English";
+          </pre>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> Only modify your own prototypes. Never
+            modify the prototypes of standard JavaScript objects.
+          </p>
+          <hr />
+        </div>
+        <!--  -->
+        <script src="/topics/40-object-prototypes.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
