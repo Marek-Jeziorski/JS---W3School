@@ -47,13 +47,82 @@
           </p>
           <p>
             <span class="mark">!</span>
-            Since a function declaration is not an executable statement, it is
-            not common to end it with a semicolon.
+            Since a
+            <span class="att"
+              >function declaration is not an executable statement</span
+            >, it is not common to end it with a semicolon.
           </p>
           <hr />
         </div>
+
         <!--  -->
+        <h4>2 - Function Expressions</h4>
+        <div>
+          <p>function expression can be stored in a variablexpression. A</p>
+          <p>
+            function
+            <span class="att">expression can be stored in a variable</span>
+          </p>
+          <pre>
+            const x = function (a, b) {return a * b};
+          </pre>
+          <p>
+            After a function expression has been stored in a variable, the
+            <span class="att">variable can be used as a function</span>:
+          </p>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <p>
+            The function above is actually an anonymous function (a function
+            without a name).
+          </p>
+
+          <p>
+            <span class="mark">!</span> Functions stored in variables do not
+            need function names. They are always invoked (called) using the
+            variable name.
+          </p>
+
+          <p>
+            The function above ends with a semicolon because it is a part of an
+            executable statement.
+          </p>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>3 - Function Hoisting</h4>
+        <div>
+          <p>
+            Hoisting is JavaScript's default behavior of
+            <span class="att">moving declarations</span> to the top of the
+            current scope.
+          </p>
+
+          <p>
+            Hoisting applies to variable declarations and to function
+            declarations.
+          </p>
+
+          Because of this, JavaScript
+          <span class="att">
+            functions can be called before they are declared:
+          </span>
+          <pre>
+            myFunction(5);
+
+            function myFunction(y) {
+              return y * y;
+            }
+          </pre>
+          <p>
+            <span class="mark">!</span> Functions defined using an
+            <span class="att"> expression are not hoisted </span>.
+          </p>
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
 
