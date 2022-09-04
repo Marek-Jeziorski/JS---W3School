@@ -14,7 +14,7 @@
     <div class="flexer container">
       <div id="menu"></div>
       <div id="content">
-        <!--  -->
+        <!-- -------------------- CHAPTER -------------------- -->
         <h2>Function Definitions</h2>
         <div>
           <p>JavaScript functions are defined with the function keyword.</p>
@@ -23,7 +23,8 @@
           <hr />
         </div>
 
-        <!--  -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
         <h4>1 - Function Declaration</h4>
         <div>
           <p>
@@ -55,10 +56,10 @@
           <hr />
         </div>
 
-        <!--  -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
         <h4>2 - Function Expressions</h4>
         <div>
-          <p>function expression can be stored in a variablexpression. A</p>
           <p>
             function
             <span class="att">expression can be stored in a variable</span>
@@ -92,7 +93,8 @@
           <hr />
         </div>
 
-        <!--  -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
         <h4>3 - Function Hoisting</h4>
         <div>
           <p>
@@ -123,8 +125,171 @@
           </p>
           <hr />
         </div>
-        <!--  -->
-        <!--  -->
+
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <h4>4 - Sefl-invoking Functions</h4>
+        <div>
+          <p>Function expressions can be made "self-invoking".</p>
+
+          <p>
+            A self-invoking expression is invoked (started) automatically,
+            without being called.
+          </p>
+
+          <p>
+            Function expressions will execute automatically if the expression is
+            followed by ().
+          </p>
+
+          <p>
+            <span class="mark">!</span> You cannot self-invoke a function
+            declaration.
+          </p>
+
+          <p>
+            <span class="mark">!</span> You have to add parentheses around the
+            function to indicate that it is a function expression:
+          </p>
+
+          <pre>
+            (function () {
+
+              let x = "Hello!!";  // I will invoke myself
+ 
+            })();
+          </pre>
+          <samp>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> The function above is actually an
+            anonymous self-invoking function (function without name).
+          </p>
+          <hr />
+        </div>
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <h4>5 - Functions Can Be Used as Values</h4>
+        <div>
+          <p>JavaScript functions can be used as values:</p>
+          <pre>
+            function myFunction(a, b) {
+              return a * b;
+            }
+            
+            let x = myFunction(4, 3);
+          </pre>
+          <p>JavaScript functions can be used in expressions:</p>
+          <pre>
+            function myFunction(a, b) {
+              return a * b;
+            }
+            
+            let x = myFunction(4, 3) * 2;
+          </pre>
+
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <h4>6 - Functions are Objects</h4>
+        <div>
+          <p>
+            The typeof operator in JavaScript returns "function" for functions.
+          </p>
+          <p>But, JavaScript functions can best be described as objects.</p>
+          <p>JavaScript functions have both properties and methods.</p>
+          <p>
+            The <span class="att">arguments.length</span> property returns the
+            number of arguments received when the function was invoked:
+          </p>
+          <pre>
+            function myFunction(a, b) {
+              return arguments.length;
+            }
+          </pre>
+          <samp>
+            <p class="dnum">demo_6a</p>
+            <p id="demo_6a"></p>
+          </samp>
+          <p>The toString() method returns the function as a string:</p>
+          <pre>
+            let text = myFunction.toString();
+          </pre>
+          <samp>
+            <p class="dnum">demo_6b</p>
+            <p id="demo_6b"></p>
+          </samp>
+          <p>
+            A function defined as the property of an object, is called a method
+            to the object.
+          </p>
+          <p>
+            A function designed to create new objects, is called an object
+            constructor.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>7 - Arrow Functions</h4>
+        <div>
+          <p>
+            Arrow functions allows a short syntax for writing function
+            expressions.
+          </p>
+          <p>
+            You don't need the function keyword, the return keyword, and the
+            curly brackets.
+          </p>
+          <pre>
+            // ES5
+
+            var x = function(x, y) {
+              return x * y;
+            }
+
+            // ES6
+
+            const x = (x, y) => x * y;
+          </pre>
+          <samp>
+            <p class="dnum">demo_7a</p>
+            <p id="demo_7a"></p>
+          </samp>
+          <p>
+            Arrow functions do not have their own this. They are not well suited
+            for defining object methods.
+          </p>
+          <p>
+            Arrow functions are not hoisted. They must be defined before they
+            are used.
+          </p>
+          <p>
+            Using const is safer than using var, because a function expression
+            is always constant value.
+          </p>
+          <p>
+            You can only omit the return keyword and the curly brackets if the
+            function is a single statement. Because of this, it might be a good
+            habit to always keep them:
+          </p>
+          <pre>
+            const x = (x, y) => { return x * y };
+          </pre>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
 
         <script src="/topics/44-function-definitions.js"></script>
       </div>

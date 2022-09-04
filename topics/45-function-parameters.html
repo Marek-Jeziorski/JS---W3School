@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Function Parameters</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h2>Function Parameters</h2>
+        <p>
+          A JavaScript function does not perform any checking on parameter
+          values (arguments)
+        </p>
+        <hr />
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>1 - Parameters and Arguments</h4>
+        <div>
+          functions can have parameters:
+          <pre>
+            function functionName(parameter1, parameter2, parameter3) {
+              // code to be executed
+            }
+          </pre>
+          <p>
+            Function parameters are the names listed in the function definition.
+          </p>
+          <p>
+            Function arguments are the real values passed to (and received by)
+            the function.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>2 - Parameter Rules</h4>
+        <div>
+          <p>
+            JavaScript function definitions do not specify data types for
+            parameters.
+          </p>
+          <p>
+            JavaScript functions do not perform type checking on the passed
+            arguments.
+          </p>
+          <p>
+            JavaScript functions do not check the number of arguments received.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>3 - Default Parameters</h4>
+        <div>
+          <p>
+            If a function is called with missing arguments (less than declared),
+            the missing values are set to undefined.
+          </p>
+          <p>
+            Sometimes this is acceptable, but sometimes it is better to assign a
+            default value to the parameter:
+          </p>
+          <pre>
+            function myFunction(x, y) {
+              if (y === undefined) {
+                y = 2;
+              }
+            }
+          </pre>
+          <samp>
+            <p class="des">Setting a default value to a function parameter.</p>
+            <p class="dnum">demo_3a</p>
+            <p id="demo_3a"></p>
+          </samp>
+          <p>
+            ECMAScript 2015 allows default parameter values in the function
+            declaration:
+          </p>
+          <pre>
+            function myFunction(x, y = 2) {
+              // function code
+            }
+          </pre>
+
+          <samp>
+            <p class="des">
+              Setting a default value to a function parameter (y=2).
+            </p>
+            <p class="dnum">demo_3b</p>
+            <p id="demo_3b"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>4 - Arguments Object</h4>
+        <div>
+          <p>
+            JavaScript functions have a built-in object called the
+            <span class="att"> arguments object </span>.
+          </p>
+
+          <p>
+            The argument object contains an array of the arguments used when the
+            function was called (invoked).
+          </p>
+
+          <p>
+            This way you can simply use a function to find (for instance) the
+            highest value in a list of numbers:
+          </p>
+          <samp>
+            <p class="des">Finding the largest number.</p>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+          <p>Or create a function to sum all input values:</p>
+          <samp>
+            <p class="des">Sum of all arguments:</p>
+            <p class="dnum">demo_4b</p>
+            <p id="demo_4b"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span> If a function is called with too many
+            arguments (more than declared), these arguments can be reached using
+            the arguments object.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>5 - Arguments are Passed by Value</h4>
+        <div>
+          <p>
+            The parameters, in a function call, are the function's arguments.
+          </p>
+          <p>
+            JavaScript arguments
+            <u>are passed by <span class="att">value</span></u
+            >: The function only gets to know the values, not the argument's
+            locations.
+          </p>
+          <p>
+            If a function changes an argument's value, it does not change the
+            parameter's original value.
+          </p>
+          <p>
+            <u>
+              Changes to arguments
+              <span class="att">
+                are not visible (reflected) outside the function.
+              </span>
+            </u>
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>6 -Objects are Passed by Reference</h4>
+        <div>
+          <p>
+            In JavaScript,
+            <span class="att">object references are values</span>.
+          </p>
+          <p>
+            Because of this, objects will behave like they are passed by
+            reference:
+          </p>
+          <p>
+            If a function changes an object property, it changes the original
+            value.
+          </p>
+          <p>
+            <u>
+              Changes to object properties
+              <span class="att">
+                are visible (reflected) outside the function.
+              </span>
+            </u>
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <script src="/topics/45-function-parameters.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
