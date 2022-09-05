@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Call()</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Function Call()</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h2>Function Call()</h2>
+        <hr />
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>1 - Method Reuse</h4>
+        <div>
+          <p>
+            With the call() method, you can write a method that can be used on
+            different objects.
+          </p>
+          <p>In JavaScript all functions are object methods.</p>
+          <p>
+            If a function is not a method of a JavaScript object, it is a
+            function of the global object (see previous chapter).
+          </p>
+          <p>The call() method is a predefined JavaScript method.</p>
+
+          <p>
+            It can be used to invoke (call) a method with an owner object as an
+            argument (parameter).
+          </p>
+          <p>
+            <span class="att">!</span> With call(), an object can use a method
+            belonging to another object.
+          </p>
+          <pre>
+            const person = {
+              fullName: function() {
+                return this.firstName + " " + this.lastName;
+              }
+            }
+
+            const person1 = {
+              firstName:"John",
+              lastName: "Doe"
+            }
+            const person2 = {
+              firstName:"Mary",
+              lastName: "Doe"
+            }
+            
+            // This will return "John Doe":
+
+            person.fullName.call(person1);
+          </pre>
+          <samp>
+            <p class="dnum">demo_1a</p>
+            <p id="demo_1a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>2 - The call() Method with Arguments</h4>
+        <div>
+          <p>The call() method can accept arguments:</p>
+          <pre>
+          const person = {
+            fullName: function(city, country) {
+              return this.firstName + " " + this.lastName + "," + city + "," + country;
+            }
+          }
+          
+          const person1 = {
+            firstName:"John",
+            lastName: "Doe"
+          }
+          
+          person.fullName.call(person1, "Oslo", "Norway");
+          </pre>
+          <samp>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <script src="/topics/47-function-call.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

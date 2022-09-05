@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>Function Invocation</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h2>Function Invocation</h2>
+        <hr />
+        <h4>1- Invoking a Function as a Function</h4>
+        <div>
+          <p>
+            The code inside a JavaScript function will execute when "something"
+            invokes it.
+          </p>
+
+          <pre>
+            function myFunction(a, b) {
+              return a * b;
+            }
+
+            myFunction(10, 2);           // Will return 20
+          </pre>
+          <p>
+            The function above does not belong to any object. But in JavaScript
+            there is always a default global object.
+          </p>
+
+          <p>
+            In HTML the default global object is the HTML page itself, so the
+            function above "belongs" to the HTML page.
+          </p>
+
+          <p>
+            In a browser the page object is the browser window. The function
+            above automatically becomes a window function.
+          </p>
+          <p>
+            <span class="mark">!</span>
+            This is a common way to invoke a JavaScript function, but not a very
+            good practice.
+          </p>
+          <p>
+            Global variables, methods, or functions can easily create name
+            conflicts and bugs in the global object.
+          </p>
+          <pre>
+            myFunction() 
+            
+            window.myFunction() 
+          </pre>
+          <p>
+            <span class="mark">!</span>
+            <u>Global functions automatically become window methods.</u> <br />
+            Invoking myFunction() is the same as invoking window.myFunction().
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>2 -Invoking function by Global Object</h4>
+        <div>
+          <p>
+            When a function is called without an owner object, the value of this
+            becomes the global object.
+          </p>
+
+          <p>In a web browser the global object is the browser window.</p>
+
+          <p>This example returns the window object as the value of this:</p>
+          <pre>
+            let x = myFunction();            // x will be [object Window]
+
+            function myFunction() {
+              return this;
+            }
+          </pre>
+          <samp>
+            <p class="des">
+              In HTML the value of <b>this</b>, in a global function, is the
+              window object.
+            </p>
+            <p class="dnum">demo_2a</p>
+            <p id="demo_2a"></p>
+          </samp>
+          <p>
+            <span class="mark">!</span>
+            Invoking a function as a global function, causes the value of this
+            to be the global object.
+          </p>
+          <p>
+            Using the window object as a variable can easily crash your program.
+          </p>
+          <samp>
+            <p class="des">The same function in local</p>
+            <p class="dnum">demo_2b</p>
+            <p id="demo_2b"></p>
+          </samp>
+
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <h4>3 - Invoking a Function as a Method</h4>
+        <div>
+          <pre>
+            const myObject = {
+            
+              firstName:"John",
+              lastName: "Doe",
+            
+              fullName: function () {
+                return this.firstName + " " + this.lastName;
+              }
+            }
+            myObject.fullName();         // Will return "John Doe"
+          </pre>
+          <p>
+            The fullName method is a function. The function belongs to the
+            object. myObject is the owner of the function.
+          </p>
+
+          <p>
+            The thing called this, is the object that "owns" the JavaScript
+            code. In this case the value of this is myObject.
+          </p>
+
+          <p>
+            Invoking a function as an object method, causes the value of this to
+            be the object itself.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <h4>4 - Invoking a Function with a Function Constructor</h4>
+        <div>
+          <p>
+            If a function invocation is preceded with the new keyword, it is a
+            constructor invocation.
+          </p>
+
+          <p>
+            It looks like you create a new function, but since JavaScript
+            functions are objects you actually create a new object:
+          </p>
+          <pre>
+            // This is a function constructor:
+
+            function myFunction(arg1, arg2) {
+              this.firstName = arg1;
+              this.lastName  = arg2;
+            }
+
+            // This creates a new object
+
+            const myObj = <span class="att">new</span> myFunction("John", "Doe");
+
+            // This will return "John"
+
+            myObj.firstName;
+          </pre>
+
+          <samp>
+            <p class="des">
+              In this example, myFunction is a function constructor:
+            </p>
+            <p class="dnum">demo_4a</p>
+            <p id="demo_4a"></p>
+          </samp>
+
+          <p>
+            A constructor invocation creates a new object. The new object
+            inherits the properties and methods from its constructor.
+          </p>
+          <p>The this keyword in the constructor does not have a value.</p>
+          <p>
+            The value of this will be the new object created when the function
+            is invoked.
+          </p>
+          <hr />
+        </div>
+
+        <!-- -------------------- CHAPTER -------------------- -->
+        <!-- -------------------- CHAPTER -------------------- -->
+
+        <script src="/topics/46-function-invocation.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
